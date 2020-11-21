@@ -1,0 +1,333 @@
+.products-line-wrapper {
+    height: 327px;
+    width: 100%;
+    .container {
+        .products-line {
+            display: flex;
+            justify-content: space-between;
+            .products-block {
+                position: relative;
+                width: 282px;
+                height: 287px;
+                margin: 20px 0;
+                user-select: none;
+                cursor: pointer;
+                &.coffee {
+                    h3 {
+                        position: absolute;
+                        top: 39px;
+                        line-height: 0.9;
+                        left: 57px;
+                        font-size: 26px;
+                        color: #d7795f;
+                    }
+                    p {
+                        position: absolute;
+
+                        top: 68px;
+                        letter-spacing: 1px;
+                        line-height: 1;
+                        font-size: 14px;
+                        left: 38px;
+                    }
+                    .products-images {
+                        .main-img {
+                            position: absolute;
+                            left: 125px;
+                            top: 90px;
+                            z-index: 10;
+                        }
+                        .secondary-img {
+                            position: absolute;
+                            top: 200px;
+                            left: 43px;
+                        }
+                    }
+                }
+                &.cacao {
+                    h3 {
+                        position: absolute;
+                        top: 61px;
+                        line-height: 0.9;
+                        left: 174px;
+                        font-size: 26px;
+                        color: #d7795f;
+                    }
+                    p {
+                        position: absolute;
+
+                        font-size: 14px;
+                        top: 37px;
+                        line-height: 1;
+                        left: 194px;
+                    }
+                    .products-images {
+                        .main-img {
+                            position: absolute;
+                            left: 125px;
+                            top: 90px;
+                            z-index: 10;
+                            left: 58px;
+                            top: 56px;
+                        }
+                        .secondary-img {
+                            position: absolute;
+                            top: 151px;
+                            left: 164px;
+                        }
+                    }
+                }
+                &.chocolate {
+                    h3 {
+                        position: absolute;
+                        top: 59px;
+                        line-height: 0.9;
+                        left: 43px;
+                        font-size: 26px;
+                        color: #d7795f;
+                    }
+                    p {
+                        position: absolute;
+                        font-size: 14px;
+                        top: 38px;
+                        letter-spacing: 1px;
+                        line-height: 1;
+                        left: 75px;
+                    }
+                    .products-images {
+                        .main-img {
+                            position: absolute;
+                            left: 72px;
+                            top: 129px;
+                            z-index: 10;
+                        }
+                        .secondary-img {
+                            position: absolute;
+                            top: 119px;
+                            left: 28px;
+                        }
+                    }
+                }
+                &.tea {
+                    h3 {
+                        position: absolute;
+                        top: 39px;
+                        line-height: 0.9;
+                        left: 154px;
+                        font-size: 26px;
+                        color: #d7795f;
+                    }
+                    p {
+                        position: absolute;
+                        font-size: 14px;
+                        top: 68px;
+                        letter-spacing: 1px;
+                        line-height: 1;
+                        left: 194px;
+                    }
+                    .products-images {
+                        .main-img {
+                            position: absolute;
+                            left: 42px;
+                            top: 56px;
+                            z-index: 10;
+                        }
+                        .secondary-img {
+                            position: absolute;
+                            top: 194px;
+                            left: 153px;
+                        }
+                    }
+                }
+                .products-bcg {
+                    height: 224px;
+                    position: absolute;
+                    top: 0;
+                    z-index: -1;
+                    width: 100%;
+
+                    &.pink {
+                        background-color: #ebdbe4;
+                    }
+                    &.brown {
+                        background-color: #ebe1db;
+                    }
+                    &.blue {
+                        background-color: #dbe5eb;
+                    }
+                    &.green {
+                        background-color: #d2dccf;
+                    }
+                }
+            }
+        }
+    }
+}
+.top-products-wrapper {
+    background-color: #f3f5f7;
+    .container {
+        .top-products-title {
+            padding-top: 56px;
+            text-align: center;
+
+            h3 {
+                font-size: 20px;
+                font-weight: 800;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                line-height: 0.9;
+            }
+        }
+        .top-products-line {
+            padding: 44px 0 93px;
+            display: flex;
+            justify-content: space-evenly;
+            .top-products-block {
+                width: 283px;
+                height: 400px;
+                background-color: #fff;
+                position: relative;
+                text-align: center;
+                cursor: pointer;
+                .products-titles {
+                    position: absolute;
+                    top: 265px;
+                    width: 100%;
+
+                    h3 {
+                        padding-bottom: 14px;
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+                    .products-price {
+                        font-size: 14px;
+                        padding-bottom: 14px;
+                        font-weight: 600;
+                        &.red-price {
+                            color: #a7171a;
+                        }
+                        &.bold-price {
+                            font-weight: 800;
+                        }
+                        span {
+                            text-decoration: line-through;
+                            color: #858585;
+                        }
+                    }
+                    p {
+                        font-size: 12px;
+                        margin: 0 auto;
+                        width: 200px;
+                        color: #848484;
+                    }
+                }
+                .sale-block {
+                    width: 48px;
+                    margin: 12px auto 0;
+                    height: 21px;
+                    background-color: #a7171a;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    p {
+                        font-weight: 700;
+                        font-size: 12px;
+                        color: #fff;
+                    }
+                }
+                .new-block {
+                    width: 44px;
+                    margin: 9px auto 0;
+                    height: 21px;
+                    background-color: #56bcab;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    p {
+                        color: #fff;
+                        font-weight: 700;
+                        font-size: 12px;
+                    }
+                }
+                .yellow-package {
+                    padding-top: 56px;
+                }
+                .white-package {
+                    display: block;
+                    margin: 30px auto 0;
+                }
+                .dark-package {
+                    margin: 34px 0 0;
+                }
+                .green-package {
+                    margin: 88px 0 0;
+                }
+                .horizontal-line {
+                    display: block;
+                    position: absolute;
+                    top: 248px;
+                    left: 50%;
+                    margin-left: -37%;
+                    width: 74%;
+                    height: 1px;
+                    background-color: #eaeaea;
+                }
+            }
+        }
+    }
+}
+.content-pages-wrapper {
+    width: 100%;
+    .container {
+        .pages-title {
+            text-align: center;
+            h3 {
+                font-size: 20px;
+                font-weight: 800;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                line-height: 1;
+                padding: 41px 0 40px;
+            }
+        }
+        .content-pages {
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+            .content-blocks {
+                p {
+                    max-width: 282px;
+                    font-size: 16px;
+                    line-height: 1.625;
+                    font-weight: 500;
+                }
+            }
+        }
+        .content-brands {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 48px 0 50px;
+            border-top: 1px solid #eaeaea;
+            border-bottom: 1px solid #eaeaea;
+            img {
+                padding: 68px 0;
+            }
+        }
+    }
+}
+
+.Ich_hielt_den_Atem_an__als_ich_aus_dem_Fenster_ {
+    font-size: 16px;
+    font-family: "Myriad Pro";
+    color: rgb(0, 0, 0);
+    line-height: 1.625;
+    text-align: left;
+    position: absolute;
+    left: 505.937px;
+    top: 2209.546px;
+    width: 252px;
+    height: 64px;
+    z-index: 312;
+}
