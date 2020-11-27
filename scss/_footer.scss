@@ -1,35 +1,35 @@
-footer{
-    .sponsors-line-wrapper{
+footer {
+    .sponsors-line-wrapper {
         height: 115px;
         width: 100%;
         background-color: #f3f5f7;
-        .container{
-            .sponsors-line{
+        .container {
+            .sponsors-line {
                 display: flex;
                 justify-content: space-between;
                 height: 115px;
-                .left-side{
+                .left-side {
                     display: flex;
                     align-items: center;
-                    .images-left{
+                    .images-left {
                         padding-left: 50px;
-                        &:nth-child(1){
+                        &:nth-child(1) {
                             padding: 0;
                         }
                     }
-                    .titles-left{
-                        padding-left:46px;
+                    .titles-left {
+                        padding-left: 46px;
                         font-size: 14px;
                         font-weight: 500;
                         user-select: none;
                     }
                 }
-                .right-side{
+                .right-side {
                     display: flex;
                     align-items: center;
-                    .images-right{
+                    .images-right {
                         padding-left: 35px;
-                        &:nth-child(1){
+                        &:nth-child(1) {
                             padding: 0;
                         }
                     }
@@ -37,98 +37,99 @@ footer{
             }
         }
     }
-    .services-line-wrapper{
-        
-        .container{
-            .services-line{
+    .services-line-wrapper {
+        .container {
+            .services-line {
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
                 height: 160px;
-                border-bottom:1px solid #eaeaea;
-                
-                .phone-block{
+                border-bottom: 1px solid #eaeaea;
+
+                .phone-block {
                     display: flex;
                     align-items: center;
-                    .phone-img{
+                    .phone-img {
                         width: 33px;
                         height: 33px;
                         opacity: 0.5;
                         margin-right: 14px;
                     }
-                    a{
-                        font-size: 24px;
-                        color: #686868;
-                    }
-                    p{
-                        font-size: 12px;
-                        font-weight: 500;
-                        color: #686868;
+                    .phone-info {
+                        a {
+                            font-size: 24px;
+                            color: #686868;
+                        }
+                        p {
+                            font-size: 12px;
+                            font-weight: 600;
+                            color: #686868;
+                        }
                     }
                 }
-                .center-block{
-                    
+                .center-block {
                     display: flex;
-                .fax-block{
-                    padding-right: 27px;
-                    h3{
-                        color: #686868;
-                        font-size: 12px;
-                        font-weight: 600;
-                        padding-bottom: 10px;
-                    }
-                    .info-part{
-                        display: flex;
-                        align-items: center;
-                        img{
-                            margin-right: 6px;
-                        }
-                        p{
+                    .fax-block {
+                        padding-right: 27px;
+                        h3 {
                             color: #686868;
                             font-size: 12px;
-                            font-weight: 500;
+                            font-weight: 600;
+                            padding-bottom: 10px;
+                        }
+                        .info-part {
+                            display: flex;
+                            align-items: center;
+                            img {
+                                margin-right: 6px;
+                            }
+                            a {
+                                color: #686868;
+                                font-size: 12px;
+                                font-weight: 500;
+                            }
                         }
                     }
-                }
-                .adress-block{
-                    padding-left: 27px;
-                    h3{
-                        color: #686868;
-                        font-size: 12px;
-                        font-weight: 600;
-                        padding-bottom: 10px;
-                    }
-                    .info-part{
-                        display: flex;
-                        align-items: center;
-                        P{
+                    .adress-block {
+                        padding-left: 27px;
+                        h3 {
                             color: #686868;
                             font-size: 12px;
-                            font-weight: 500;
+                            font-weight: 600;
+                            padding-bottom: 10px;
                         }
-                        .marker-img{
-                            margin-right: 9px;
+                        .info-part {
+                            display: flex;
+                            align-items: center;
+                            a {
+                                color: #686868;
+                                font-size: 12px;
+
+                                font-weight: 500;
+                            }
+                            .marker-img {
+                                margin-right: 9px;
+                            }
                         }
                     }
                 }
-                }
-                .email-block{
-                    h3{
+                .email-block {
+                    h3 {
                         color: #686868;
                         font-size: 12px;
                         font-weight: 600;
                         padding-bottom: 10px;
                         text-transform: uppercase;
                     }
-                    .info-part{
+                    .info-part {
                         display: flex;
                         align-items: center;
-                        p{
+                        p {
                             color: #686868;
                             font-weight: 500;
                             font-size: 12px;
                         }
-                        .email-img{
+                        .email-img {
                             margin-right: 12px;
                         }
                     }
@@ -136,48 +137,50 @@ footer{
             }
         }
     }
-    .footer-services-wrapper{
-        .container{
-            .footer-services{
+    .footer-services-wrapper {
+        .container {
+            .footer-services {
                 padding-top: 52px;
                 display: flex;
                 justify-content: space-between;
-                .info-part{
+                .info-part {
                     display: flex;
-                    .info-blocks{
-                        &.base-shop{
+                    flex-direction: row;
+                    .info-blocks {
+                        &.base-shop {
                             margin-right: 126px;
                         }
-                        &.legal-block{
+                        &.legal-block {
                             margin-right: 112px;
                         }
-                        &.transport-block{
+                        &.transport-block {
                             margin-right: 66px;
                         }
-                        .info-titles{
+                        .info-titles {
                             text-transform: uppercase;
                             color: #686868;
-                            
+
                             font-size: 12px;
                             font-weight: 700;
                         }
-                        p{
+                        a {
                             font-weight: 500;
+                            display: block;
                             margin-top: 12px;
                             color: #686868;
                             font-size: 12px;
                         }
                     }
                 }
-                .social-part{
+                .social-part {
                     display: flex;
                     flex-direction: column;
-                    h3{
+                    h3 {
                         font-size: 12px;
                         color: #686868;
                         font-weight: 700;
                     }
-                    .form-email{
+                    .form-email {
                         margin-top: 14px;
                         width: 280px;
                         height: 38px;
@@ -185,34 +188,34 @@ footer{
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
-                        input{
+                        input {
                             border: none;
                             margin-left: 11px;
+                            font-size: 14px;
+                            font-weight: 500;
+                            color: #686868;
+                            width: 222px;
                         }
-                        button{
+                        button {
                             margin-right: 11px;
                             border: none;
-                            background-color:transparent;
+                            background-color: transparent;
                             cursor: pointer;
-                            img{
-                            
-                            width: 12px;
-                            height: 12px;
+                            img {
+                                width: 12px;
+                                height: 12px;
+                            }
                         }
-                        }
-                        
                     }
-                    .social-links{
+                    .social-links {
                         padding-bottom: 96px;
                         margin-top: 38px;
-                        a{
+                        a {
                             margin-right: 19px;
-                           img{
-                            
-                            width: 19px;
-                        } 
+                            img {
+                                width: 19px;
+                            }
                         }
-                        
                     }
                 }
             }

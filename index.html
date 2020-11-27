@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <title>Document</title>
+    <title>Product Coffee Shop</title>
 </head>
 <body>
+    <div class="back-to-top" id="back-top"><img src="svg/arrowUpIcon.svg" class="svg" alt=""></div>
     <header>
         <div class="main-settings-wrapper">
         <div class="container">
@@ -30,10 +31,11 @@
     <div class="help-line-wrapper">
         <div class="container">
             <div class="help-line">
-            <div class="help-line-left"><img src="img/logoHeader.png" alt="logoHeader"></div>
+            <div class="help-line-left"><a href="#"><img src="img/logoHeader.png" alt="logoHeader"></a></div>
             <div class="help-line-center">
-                <input type="text" placeholder="Suche">
-                <img class="svg" src="svg/searchIcon.svg" alt="searchIcon">
+                <input type="text" placeholder="Suche" name="search">
+                <button class="search-btn" type="submit" name="search"><img class="svg" src="svg/searchIcon.svg" alt="searchIcon"></button>
+                
             </div>
             <div class="help-line-right">
                 <div class="self-cabinet">
@@ -65,7 +67,36 @@
         <div class="header-title">
             <p>Kostenloser Versand – Kostenlose Rückgabe</p>
         </div>
-    </header>
+</header>
+<div class="swiper-container image-slider">
+
+    <div class="swiper-wrapper">
+        <div class="swiper-slide coffee-slide">
+            <h2 class="slide-title">KAFFEE BASE</h2>
+            <div class="slide-button"><a href="#">BASE BUTTON</a></div>
+            <img class="slide-brown-bottle" src="img/coffeBottle.png" alt="">
+            <img class="slide-dark-bottle" src="img/coffeeBottleDarkSlider.png" alt="">
+            <img class="slide-coffee-cup" src="img/coffeeCup.png" alt="">
+        </div>
+        <div class="swiper-slide coffee-slide">
+            <h2 class="slide-title">KAFFEE BASE</h2>
+            <div class="slide-button"><a href="#">BASE BUTTON</a></div>
+            <img class="slide-brown-bottle" src="img/coffeBottle.png" alt="">
+            <img class="slide-dark-bottle" src="img/coffeeBottleDarkSlider.png" alt="">
+            <img class="slide-coffee-cup" src="img/coffeeCup.png" alt="">
+        </div>
+        <div class="swiper-slide coffee-slide">
+            <h2 class="slide-title">KAFFEE BASE</h2>
+            <div class="slide-button"><a href="#">BASE BUTTON</a></div>
+            <img class="slide-brown-bottle" src="img/coffeBottle.png" alt="">
+            <img class="slide-dark-bottle" src="img/coffeeBottleDarkSlider.png" alt="">
+            <img class="slide-coffee-cup" src="img/coffeeCup.png" alt="">
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
 <div class="products-line-wrapper">
         <div class="container">
             <div class="products-line">
@@ -190,7 +221,6 @@
             <img src="img/banderole.png" alt="">
         </div>
     </div>
-    <div class="back-to-top" id="back-top"><img src="svg/arrowUpIcon.svg" class="svg" alt=""></div>
 </div>
 <footer>
     <div class="sponsors-line-wrapper">
@@ -228,14 +258,14 @@
                     <h3>FAX</h3>
                     <div class="info-part">
                     <img src="svg/fileIcon.svg" class="svg" alt="">
-                    <p>+49 8031 2210 55 22</p>
+                    <a href="tel:+49 8031 2210 55 22">+49 8031 2210 55 22</a>
                 </div>
                 </div>
                 <div class="adress-block">
                     <h3>ADRESSE</h3>
                     <div class="info-part">
                     <img src="svg/markerIcon.svg" class="svg marker-img" alt="">
-                    <p>Karte zeigen ></p>
+                    <a target="_blank" href="https://ru.wikipedia.org/wiki/%D0%9F%D0%BE%D0%BB%D1%82%D0%B0%D0%B2%D0%B0#/maplink/0">Karte zeigen ></a>
                 </div>
                 </div>
                 </div>
@@ -255,26 +285,26 @@
                 <div class="info-part">
                     <div class="info-blocks base-shop">
                         <h3 class="info-titles">base+shop</h3>
-                        <p>Unternehmen</p>
-                        <p>Impressum</p>
-                        <p>News</p>
+                        <a href="#">Unternehmen</a>
+                        <a href="#">Impressum</a>
+                        <a href="#">News</a>
                     </div>
                     <div class="info-blocks legal-block">
                         <h3 class="info-titles">Rechtliches</h3>
-                        <p>AGB</p>
-                        <p>Datenschutz</p>
+                        <a href="#">AGB</a>
+                        <a href="#">Datenschutz</a>
                     </div>
                     <div class="info-blocks transport-block">
                         <h3 class="info-titles">Versand</h3>
-                        <p>Versandkosten</p>
-                        <p>Widerrufsrecht/Garantie</p>
-                        <p>Rückversand</p>
+                        <a href="#">Versandkosten</a>
+                        <a href="#">Widerrufsrecht/Garantie</a>
+                        <a href="#">Rückversand</a>
                     </div>
                     <div class="info-blocks">
                         <h3 class="info-titles">standort</h3>
-                        <p>TechDivision GmbH</p>
-                        <p>Spinnereiinsel 3a</p>
-                        <p>83059 Kolbermoor (DE)</p>
+                        <a href="#">TechDivision GmbH</a>
+                        <a href="#">Spinneraiinsel 3a</a>
+                        <a href="#">83059 Kolbermoor (DE)</a>
                     </div>
                 </div>
                 <div class="social-part">
@@ -295,6 +325,8 @@
         </div>
     </div>
 </footer>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="js/script.js"></script>
+
 </body>
 </html>
