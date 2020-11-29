@@ -8,8 +8,12 @@
     font-weight: 400;
     outline: none;
     border: none;
+    transition: all .2s;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
 }
-
 
 .container {
     margin: 0 auto;
@@ -89,16 +93,14 @@ header {
                         border: none;
                         width: 82%;
                     }
-                    .search-btn{
+                    .search-btn {
                         margin-right: 14px;
                         background-color: transparent;
                         cursor: pointer;
-                       img {
-                        opacity: 1;
-                        
-                    } 
+                        img {
+                            opacity: 1;
+                        }
                     }
-                    
                 }
                 &-right {
                     display: flex;
@@ -195,7 +197,7 @@ header {
     -ms-transition: all 0.5s;
     -o-transition: all 0.5s;
 }
-.back-to-top-show{
+.back-to-top-show {
     opacity: 1;
     visibility: visible;
 }
@@ -217,10 +219,237 @@ header {
     .container {
         width: 1140px;
     }
+    .products-line-wrapper {
+        .container {
+            .products-line {
+                .products-block {
+                    width: 260px;
+                    &.cacao {
+                        h3 {
+                            left: 160px;
+                        }
+                        .products-images {
+                            .main-img {
+                                left: 42px;
+                            }
+                            .secondary-img {
+                                left: 151px;
+                            }
+                        }
+                    }
+                    &.chocolate {
+                        .products-images {
+                            .main-img {
+                                left: 57px;
+                            }
+                            .secondary-img {
+                                left: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .top-products-wrapper {
+        .container {
+            .top-products-line {
+                .top-products-block {
+                    width: 246px;
+                }
+            }
+        }
+    }
+    .content-pages-wrapper {
+        .container {
+            .content-pages {
+                .content-blocks {
+                    img {
+                        width: 250px;
+                    }
+                    p {
+                        max-width: 250px;
+                    }
+                }
+            }
+        }
+    }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .container {
         width: 960px;
+    }
+    .image-slider {
+        &.swiper-container {
+            .swiper-wrapper {
+                .swiper-slide {
+                    &.coffee-slide {
+                        .slide-title {
+                            margin-left: -437px;
+                        }
+                        .slide-button {
+                            margin-left: -438px;
+                        }
+                        .slide-brown-bottle {
+                            margin-left: -210px;
+                            margin-top: 102px;
+                            width: 210px;
+                        }
+                        .slide-dark-bottle {
+                            margin-left: -36px;
+                            width: 179px;
+                            margin-top: 179px;
+                        }
+                        .slide-coffee-cup {
+                            margin-left: 158px;
+                            margin-top: 326px;
+                            width: 273px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .products-line-wrapper {
+        .container {
+            .products-line {
+                .products-block {
+                    width: 220px;
+                    &.coffee {
+                        .products-images {
+                            .main-img {
+                                width: 74px;
+                            }
+                            .secondary-img {
+                                width: 132px;
+                            }
+                        }
+                    }
+                    &.cacao {
+                        h3 {
+                            left: 124px;
+                        }
+                        p {
+                            left: 150px;
+                        }
+                        .products-images {
+                            .main-img {
+                                width: 88px;
+                                left: 23px;
+                                top: 70px;
+                            }
+                            .secondary-img {
+                                top: 151px;
+                                left: 129px;
+                                width: 68px;
+                            }
+                        }
+                    }
+                    &.chocolate {
+                        .products-images {
+                            .main-img {
+                                left: 45px;
+                                width: 162px;
+                                top: 136px;
+                            }
+                            .secondary-img {
+                                left: 16px;
+                                width: 162px;
+                                top: 122px;
+                            }
+                        }
+                    }
+                    &.tea {
+                        h3 {
+                            left: 114px;
+                        }
+                        p {
+                            left: 144px;
+                        }
+                        .products-images {
+                            .main-img {
+                                width: 88px;
+                                top: 70px;
+                                left: 23px;
+                            }
+                            .secondary-img {
+                                top: 187px;
+                                left: 124px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .top-products-wrapper {
+        .container {
+            .top-products-line {
+                .top-products-block {
+                    width: 220px;
+                }
+            }
+        }
+    }
+    .content-pages-wrapper {
+        .container {
+            .content-pages {
+                .content-blocks {
+                    img {
+                        width: 220px;
+                    }
+                    p {
+                        max-width: 220px;
+                    }
+                }
+            }
+            .content-brands {
+                height: 136px;
+                img {
+                    width: 75px;
+                }
+            }
+        }
+    }
+    footer {
+        .sponsors-line-wrapper {
+            .container {
+                .sponsors-line {
+                    .left-side {
+                        .images-left {
+                            padding-left: 22px;
+                        }
+                        .titles-left {
+                            padding-left: 30px;
+                        }
+                    }
+                    .right-side {
+                        .images-right {
+                            padding-left: 28px;
+                        }
+                    }
+                }
+            }
+        }
+        .footer-services-wrapper {
+            .container {
+                .footer-services {
+                    .info-part {
+                        .info-blocks {
+                            &.base-shop {
+                                margin-right: 61px;
+                            }
+                            &.legal-block {
+                                margin-right: 67px;
+                            }
+                            &.transport-block {
+                                margin-right: 54px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
