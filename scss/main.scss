@@ -1159,6 +1159,7 @@ header {
         .navigation-wrapper {
             height: 0;
             visibility: hidden;
+            opacity: 0;
             border: none;
             transition: all 0.2s;
             -webkit-transition: all 0.2s;
@@ -1166,7 +1167,8 @@ header {
             -ms-transition: all 0.2s;
             -o-transition: all 0.2s;
             &.active-nav-line {
-                height: 70px !important;
+                opacity: 1;
+                height: 90px !important;
                 visibility: visible;
                 border-top: 1px solid #e5e5e5;
                 border-bottom: 1px solid #e5e5e5;
@@ -1177,34 +1179,34 @@ header {
                 -o-transition: all 0.2s;
             }
             .container {
+                height: 100%;
                 .navigation {
                     display: flex;
                     justify-content: space-between;
                     text-align: center;
                     flex-wrap: wrap;
                     .navigation-links {
-                        font-size: 0px;
+                        font-size: 11px;
                         flex-basis: 32%;
-                        opacity: 0;
-                        margin: 0;
-                        &:nth-child(4) {
-                            margin-top: 20px;
-                        }
-                        &:nth-child(5) {
-                            margin-top: 20px;
-                        }
-                        &:nth-child(6) {
-                            margin-top: 20px;
-                        }
-                        &.nav-active-links {
-                            transition: all 0.2s;
-                            font-size: 11px !important;
-                            opacity: 1;
-                            -webkit-transition: all 0.2s;
-                            -moz-transition: all 0.2s;
-                            -ms-transition: all 0.2s;
-                            -o-transition: all 0.2s;
-                        }
+                        margin: 20px 0 0 0;
+                        // &:nth-child(4) {
+                        //     margin-top: 20px;
+                        // }
+                        // &:nth-child(5) {
+                        //     margin-top: 20px;
+                        // }
+                        // &:nth-child(6) {
+                        //     margin-top: 20px;
+                        // }
+                        // &.nav-active-links {
+                        //     transition: all 0.2s;
+                        //     font-size: 11px !important;
+                        //     opacity: 1;
+                        //     -webkit-transition: all 0.2s;
+                        //     -moz-transition: all 0.2s;
+                        //     -ms-transition: all 0.2s;
+                        //     -o-transition: all 0.2s;
+                        // }
                     }
                 }
             }
