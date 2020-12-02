@@ -3,10 +3,11 @@
     .container {
         .products-line {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             .products-block {
                 position: relative;
-                width: 282px;
+                flex-basis: 23.5%;
                 height: 287px;
                 margin: 20px 0;
                 user-select: none;
@@ -22,7 +23,7 @@
                     }
                     p {
                         position: absolute;
-
+                        color: #000000;
                         top: 68px;
                         letter-spacing: 1px;
                         line-height: 1;
@@ -54,7 +55,7 @@
                     }
                     p {
                         position: absolute;
-
+                        color: #000000;
                         font-size: 14px;
                         top: 37px;
                         line-height: 1;
@@ -84,6 +85,7 @@
                         color: #d7795f;
                     }
                     p {
+                        color: #000000;
                         position: absolute;
                         font-size: 14px;
                         top: 38px;
@@ -115,6 +117,7 @@
                         color: #d7795f;
                     }
                     p {
+                        color: #000000;
                         position: absolute;
                         font-size: 14px;
                         top: 68px;
@@ -178,97 +181,105 @@
         .top-products-line {
             padding: 44px 0 93px;
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-evenly;
             .top-products-block {
-                width: 283px;
+                width: 80%;
+                flex-basis: 23.5%;
                 height: 400px;
                 background-color: #fff;
                 position: relative;
                 text-align: center;
-                cursor: pointer;
-                .products-titles {
-                    position: absolute;
-                    top: 265px;
+
+                a {
                     width: 100%;
+                    height: 100%;
+                    .products-titles {
+                        position: absolute;
+                        top: 265px;
+                        width: 100%;
 
-                    h3 {
-                        padding-bottom: 14px;
-                        font-size: 14px;
-                        font-weight: 600;
-                    }
-                    .products-price {
-                        font-size: 14px;
-                        padding-bottom: 14px;
-                        font-weight: 600;
-                        &.red-price {
-                            color: #a7171a;
+                        h3 {
+                            padding-bottom: 14px;
+                            color: #000000;
+                            font-size: 14px;
+                            font-weight: 500;
                         }
-                        &.bold-price {
-                            font-weight: 800;
+                        .products-price {
+                            color: #000000;
+                            font-size: 14px;
+                            padding-bottom: 14px;
+                            font-weight: 600;
+                            &.red-price {
+                                color: #a7171a;
+                            }
+                            &.bold-price {
+                                font-weight: 800;
+                            }
+                            span {
+                                text-decoration: line-through;
+                                color: #858585;
+                            }
                         }
-                        span {
-                            text-decoration: line-through;
-                            color: #858585;
+                        p {
+                            font-size: 12px;
+                            margin: 0 auto;
+                            width: 200px;
+                            color: #848484;
                         }
                     }
-                    p {
-                        font-size: 12px;
-                        margin: 0 auto;
-                        width: 200px;
-                        color: #848484;
+                    .sale-block {
+                        width: 48px;
+                        margin: 12px auto 0;
+                        height: 21px;
+                        background-color: #a7171a;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        p {
+                            font-weight: 700;
+                            font-size: 12px;
+                            color: #fff;
+                        }
                     }
-                }
-                .sale-block {
-                    width: 48px;
-                    margin: 12px auto 0;
-                    height: 21px;
-                    background-color: #a7171a;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    p {
-                        font-weight: 700;
-                        font-size: 12px;
-                        color: #fff;
-                    }
-                }
-                .new-block {
-                    width: 44px;
-                    margin: 9px auto 0;
-                    height: 21px;
-                    background-color: #56bcab;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    .new-block {
+                        width: 44px;
+                        margin: 9px auto 0;
+                        height: 21px;
+                        background-color: #56bcab;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
 
-                    p {
-                        color: #fff;
-                        font-weight: 700;
-                        font-size: 12px;
+                        p {
+                            color: #fff;
+                            font-weight: 700;
+                            font-size: 12px;
+                        }
                     }
-                }
-                .yellow-package {
-                    padding-top: 56px;
-                }
-                .white-package {
-                    display: block;
-                    margin: 30px auto 0;
-                }
-                .dark-package {
-                    margin: 34px 0 0;
-                }
-                .green-package {
-                    margin: 88px 0 0;
-                }
-                .horizontal-line {
-                    display: block;
-                    position: absolute;
-                    top: 248px;
-                    left: 50%;
-                    margin-left: -37%;
-                    width: 74%;
-                    height: 1px;
-                    background-color: #eaeaea;
+                    .yellow-package {
+                        padding-top: 56px;
+                    }
+                    .white-package {
+                        display: block;
+                        margin: 30px auto 0;
+                    }
+                    .dark-package {
+                        margin: 34px 0 0;
+                    }
+                    .green-package {
+                        margin: 88px 0 0;
+                    }
+                    .horizontal-line {
+                        display: block;
+                        position: absolute;
+                        top: 248px;
+                        left: 50%;
+                        margin-left: -37%;
+                        width: 74%;
+                        height: 1px;
+                        background-color: #eaeaea;
+                    }
                 }
             }
         }
@@ -292,11 +303,18 @@
         }
         .content-pages {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             cursor: pointer;
             .content-blocks {
+                flex-basis: 23.5%;
+                img {
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                }
                 p {
-                    max-width: 282px;
+                    max-width: 100%;
                     font-size: 16px;
                     line-height: 1.625;
                     font-weight: 500;

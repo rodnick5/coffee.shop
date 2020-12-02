@@ -42,3 +42,15 @@ function backToTop() {
   let goTopBtn = document.getElementById('back-top');
   window.addEventListener('scroll', trackScroll);
   goTopBtn.addEventListener('click', backToTop);
+
+  let menuBtn = document.getElementById('menu-burger-button');
+  menuBtn.addEventListener('click' , function(){
+    let navLinks = document.querySelectorAll('.navigation-links');
+    let nav = document.getElementById('nav-wrapper');
+    menuBtn.classList.toggle('active-menu-btn');
+    for (let i of navLinks) {
+      i.classList.toggle('nav-active-links');
+    }
+    nav.classList.toggle('active-nav-line');
+  });
+  
