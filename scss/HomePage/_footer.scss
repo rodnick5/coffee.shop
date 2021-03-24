@@ -1,0 +1,235 @@
+footer {
+    .sponsors-line-wrapper {
+        height: 115px;
+        width: 100%;
+        background-color: #f3f5f7;
+        .container {
+            height: 100%;
+            .sponsors-line {
+                display: flex;
+                justify-content: space-between;
+                height: 100%;
+                .left-side {
+                    display: flex;
+                    align-items: center;
+                    .img-line {
+                        display: flex;
+                        .images-left {
+                            padding-left: 50px;
+                            &:nth-child(1) {
+                                padding: 0;
+                            }
+                        }
+                    }
+                    .title-line {
+                        display: flex;
+                        .titles-left {
+                            padding-left: 46px;
+                            font-size: 14px;
+                            font-weight: 500;
+                            user-select: none;
+                        }
+                    }
+                }
+                .right-side {
+                    display: flex;
+                    align-items: center;
+                    .images-right {
+                        padding-left: 35px;
+                        &:nth-child(1) {
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .services-line-wrapper {
+        .container {
+            .services-line {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                height: 160px;
+                border-bottom: 1px solid #eaeaea;
+
+                .phone-block {
+                    display: flex;
+                    align-items: center;
+                    .phone-img {
+                        width: 33px;
+                        height: 33px;
+                        opacity: 0.5;
+                        margin-right: 14px;
+                    }
+                    .phone-info {
+                        a {
+                            font-size: 24px;
+                            color: #686868;
+                        }
+                        p {
+                            font-size: 12px;
+                            font-weight: 600;
+                            color: #686868;
+                        }
+                    }
+                }
+                .contacts-block {
+                    display: flex;
+                    .fax-block {
+                        padding-right: 27px;
+                        h3 {
+                            color: #686868;
+                            font-size: 12px;
+                            font-weight: 600;
+                            padding-bottom: 10px;
+                        }
+                        .info-part {
+                            display: flex;
+                            align-items: center;
+                            img {
+                                margin-right: 6px;
+                            }
+                            a {
+                                color: #686868;
+                                font-size: 12px;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                    .adress-block {
+                        padding-left: 27px;
+                        h3 {
+                            color: #686868;
+                            font-size: 12px;
+                            font-weight: 600;
+                            padding-bottom: 10px;
+                        }
+                        .info-part {
+                            display: flex;
+                            align-items: center;
+                            a {
+                                color: #686868;
+                                font-size: 12px;
+
+                                font-weight: 500;
+                            }
+                            .marker-img {
+                                margin-right: 9px;
+                            }
+                        }
+                    }
+                    .email-block {
+                        padding-left: 206px;
+                        h3 {
+                            color: #686868;
+                            font-size: 12px;
+                            font-weight: 600;
+                            padding-bottom: 10px;
+                            text-transform: uppercase;
+                        }
+                        .info-part {
+                            display: flex;
+                            align-items: center;
+                            p {
+                                color: #686868;
+                                font-weight: 500;
+                                font-size: 12px;
+                            }
+                            .email-img {
+                                margin-right: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer-services-wrapper {
+        .container {
+            .footer-services {
+                padding-top: 52px;
+                display: flex;
+                justify-content: space-between;
+                .info-part {
+                    display: flex;
+                    flex-direction: row;
+                    .info-blocks {
+                        &.base-shop {
+                            margin-right: 126px;
+                        }
+                        &.legal-block {
+                            margin-right: 112px;
+                        }
+                        &.transport-block {
+                            margin-right: 66px;
+                        }
+                        .info-titles {
+                            text-transform: uppercase;
+                            color: #686868;
+
+                            font-size: 12px;
+                            font-weight: 700;
+                        }
+                        a {
+                            font-weight: 500;
+                            display: block;
+                            margin-top: 12px;
+                            color: #686868;
+                            font-size: 12px;
+                        }
+                    }
+                }
+                .social-part {
+                    display: flex;
+                    flex-direction: column;
+                    .letter-block {
+                        h3 {
+                            font-size: 12px;
+                            color: #686868;
+                            font-weight: 700;
+                        }
+                        .form-email {
+                            margin-top: 14px;
+                            width: 280px;
+                            height: 38px;
+                            border: 1px solid #e5e5e5;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            input {
+                                border: none;
+                                margin-left: 11px;
+                                font-size: 14px;
+                                font-weight: 500;
+                                color: #686868;
+                                width: 222px;
+                            }
+                            button {
+                                margin-right: 11px;
+                                border: none;
+                                background-color: transparent;
+                                cursor: pointer;
+                                img {
+                                    width: 12px;
+                                    height: 12px;
+                                }
+                            }
+                        }
+                    }
+
+                    .social-links {
+                        padding-bottom: 96px;
+                        margin-top: 38px;
+                        a {
+                            margin-right: 19px;
+                            img {
+                                width: 19px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

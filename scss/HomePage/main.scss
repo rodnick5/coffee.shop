@@ -14,7 +14,6 @@
     -ms-transition: all 0.2s;
     -o-transition: all 0.2s;
 }
-
 .container {
     margin: 0 auto;
 }
@@ -226,6 +225,20 @@ header {
     .container {
         width: 1140px;
     }
+    .image-slider {
+        &.swiper-container {
+            .swiper-wrapper {
+                .swiper-slide {
+                    &.coffee-slide {
+                        .slide-title {
+                            margin-left: -500px;
+                            width: 200px;
+                        }
+                    }
+                }
+            }
+        }
+    }
     .products-line-wrapper {
         .container {
             .products-line {
@@ -282,6 +295,7 @@ header {
                     &.coffee-slide {
                         .slide-title {
                             margin-left: -437px;
+                            width: 200px;
                         }
                         .slide-button {
                             margin-left: -438px;
@@ -495,7 +509,8 @@ header {
                     &.coffee-slide {
                         .slide-title {
                             margin-left: 88px;
-                            margin-top: 133px;
+                            margin-top: 105px;
+                            width: 200px;
                         }
                         .slide-button {
                             margin-left: 88px;
