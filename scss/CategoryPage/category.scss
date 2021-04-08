@@ -200,8 +200,8 @@ header {
         justify-content: center;
         align-items: center;
         border-bottom: 1px solid #eaeaea;
-        .show-page{
-            a{
+        .show-page {
+            a {
                 color: #000;
             }
         }
@@ -374,6 +374,166 @@ header {
                     .navigation-links {
                         font-size: 12px;
                         margin: 0;
+                    }
+                }
+            }
+        }
+    }
+    .content-page {
+        .container {
+            .content-wrapper {
+                .select-part {
+                    .filter-reset {
+                        .reset-wrapper {
+                            height: 29px;
+                            .reset-button {
+                                font-size: 9px;
+                            }
+                        }
+                    }
+                    .adds-filter{
+                        .adds-button{
+                            height: 29px;
+                            a{
+                                font-size: 9px;
+                                img{
+                                    width: 9px;
+                                    height: 9px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .products-part {
+                    .products-list-filter {
+                        height: 38px;
+                        .products-count {
+                            .num-count {
+                                font-size: 9px;
+                                width: 60px;
+                            }
+                            .count-filter {
+                                padding: 0 4px 0 0;
+                                .num-show {
+                                    font-size: 9px;
+                                    margin-right: 5px;
+                                }
+                                a {
+                                    width: 40px;
+                                    font-size: 9px;
+                                    img {
+                                        width: 9px;
+                                        height: 9px;
+                                    }
+                                }
+                            }
+                        }
+                        .position-filter {
+                            padding: 0 12px 0 12px;
+                            a {
+                                font-size: 9px;
+                                img {
+                                    width: 9px;
+                                    height: 9px;
+                                }
+                            }
+                        }
+                        .view-filter {
+                            .arrows-changer {
+                                .arrow-up {
+                                    img {
+                                        width: 9px;
+                                        height: 9px;
+                                        margin-top: 8px;
+                                    }
+                                }
+                                .arrow-down {
+                                    img {
+                                        margin-bottom: 8px;
+                                        width: 9px;
+                                        height: 9px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .pages-pagination {
+                        height: 39px;
+                        .pagination-blocks {
+                            &.left {
+                                .arrow-link {
+                                    .arrow-left {
+                                        height: 22px;
+                                        width: 22px;
+                                    }
+                                }
+                            }
+
+                            &.right {
+                                .arrow-link {
+                                    .arrow-right {
+                                        height: 22px;
+                                        width: 22px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .top-products-wrapper {
+                        .top-products-block {
+                            height: 278px;
+                            a {
+                                img {
+                                    width: 60px;
+                                }
+                                .yellow-package {
+                                    padding-top: 41px;
+                                }
+                                .white-package {
+                                    margin: 20px auto 0;
+                                }
+                                .dark-package {
+                                    margin: 20px auto 0;
+                                }
+                                .green-package {
+                                    margin: 68px 0 0;
+                                    width: 105px;
+                                }
+                                .horizontal-line {
+                                    top: 177px;
+                                }
+                                .sale-block {
+                                    width: 35px;
+                                    height: 13px;
+                                    p {
+                                        font-size: 9px;
+                                    }
+                                }
+                                .new-block {
+                                    width: 35px;
+                                    height: 13px;
+                                    p {
+                                        font-size: 9px;
+                                    }
+                                }
+                                .products-titles {
+                                    top: 187px;
+                                    h3 {
+                                        padding-bottom: 6px;
+                                        font-size: 10px;
+                                    }
+                                    .products-price {
+                                        font-size: 11px;
+                                        padding-bottom: 8px;
+                                    }
+                                    p {
+                                        font-size: 10px;
+                                        margin: 0 9px;
+                                        width: auto;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
