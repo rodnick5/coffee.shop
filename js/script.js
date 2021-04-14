@@ -15,7 +15,11 @@ let mySwiper = new Swiper('.swiper-container', {
   },
 
 });
-
+let filterBtn = document.getElementById('filter-btn');
+filterBtn.addEventListener('click', function() {
+  document.body.classList.toggle("freeze-page");
+  document.getElementById('filter-menu').classList.toggle("filter-active");
+});
 function backToTop() {
     if (window.pageYOffset > 0) {
       window.scrollBy(0, -30);

@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="img/contentBottleYellow.png" type="image/png">
     <link rel="stylesheet" href="css/category.css">
 </head>
-<body>
+<body class="page">
     <div class="back-to-top" id="back-top"><img src="svg/arrowUpIcon.svg" class="svg" alt=""></div>
     <header>
         <div class="main-settings-wrapper">
@@ -83,9 +83,10 @@
         </div>
 </header>
 <div class="content-page">
-    <div class="container">
-        <div class="content-wrapper">
-        <div class="select-part">
+    <div class="content-wrapper">
+        <div class="container">
+        <div class="select-part" id="filter-menu">
+        <!-- <div class="close-filter"><img src="img/cancel.png" alt="" class="filter-btn"></div> -->
         <div class="products-all">
             <p>Lebensmittel</p>
             <a class="product-link main" href="">Alle</a>
@@ -173,6 +174,7 @@
                     <a href="">Sortieren nach  Position<img src="svg/arrowDown.svg" alt=""></a>
                 </div>
                 <div class="view-filter">
+                    <div class="menu-filter"><p id="filter-btn">Filters</p></div>
                     <div class="arrows-changer">
                         <div class="arrow-up"><img src="svg/arrowUpStraight.svg" alt=""></div>
                         <div class="arrow-down"><img src="svg/arrowDown.svg"  alt=""></div>
@@ -340,8 +342,8 @@
             </div>
         </div>
         </div>
-        <div class="container">
-            <div class="showed-products-list">
+        <div class="showed-products-list">
+            <div class="container">
                 <h2>Zuletzt gesehene Produkte</h2>
                 <div class="showed-products">
                     <div class="top-products-block yellow-block">
