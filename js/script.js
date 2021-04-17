@@ -15,11 +15,16 @@ let mySwiper = new Swiper('.swiper-container', {
   },
 
 });
-let filterBtn = document.getElementById('filter-btn');
-filterBtn.addEventListener('click', function() {
+
+document.getElementById('filter-btn1').addEventListener('click', fltrMenu);
+document.getElementById('filter-btn2').addEventListener('click', fltrMenu);
+
+function fltrMenu() {
+  let menu = document.getElementById('filter-menu');
+  menu.classList.toggle("filter-active");
   document.body.classList.toggle("freeze-page");
-  document.getElementById('filter-menu').classList.toggle("filter-active");
-});
+};
+
 function backToTop() {
     if (window.pageYOffset > 0) {
       window.scrollBy(0, -30);
