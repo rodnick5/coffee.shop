@@ -590,7 +590,7 @@ header .header-this-page .page-name {
   margin-top: 13px;
   transition: all 0.4s;
   overflow: hidden;
-  height: 220px;
+  height: 209px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -648,7 +648,7 @@ header .header-this-page .page-name {
 
 .content-page .content-wrapper .container .select-part .trade-marks .trade-list {
   margin-top: 13px;
-  height: 220px;
+  height: 209px;
   width: 100%;
   overflow: hidden;
   display: -webkit-box;
