@@ -25,6 +25,32 @@ img.svg {
 .freeze-page {
     overflow: hidden !important;
 }
+.close-filter {
+    display: none;
+}
+.rotate180 {
+    transform: rotate(180deg) !important;
+    -webkit-transform: rotate(180deg) !important;
+    -moz-transform: rotate(180deg) !important;
+    -ms-transform: rotate(180deg) !important;
+    -o-transform: rotate(180deg) !important;
+}
+.country-list-active {
+    height: 365px !important;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+}
+.list-trade-active {
+    height: 392px !important;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+}
 .filter-active {
     left: 0 !important;
     transition: all 500ms;
@@ -392,7 +418,33 @@ header {
     .content-page {
         .content-wrapper {
             .container {
+                justify-content: center;
                 .select-part {
+                    overflow-y: auto;
+                    z-index: 10;
+                    position: fixed;
+                    background-color: rgba(#ffffff, 0.98);
+                    left: -100%;
+                    top: 0;
+                    bottom: 0;
+                    transition: all 500ms;
+                    height: 100vh;
+                    -webkit-transition: all 500ms;
+                    -moz-transition: all 500ms;
+                    -ms-transition: all 500ms;
+                    -o-transition: all 500ms;
+                    .products-all {
+                        position: relative;
+                        .close-filter {
+                            display: block;
+                            width: 15px;
+                            height: 15px;
+                            position: absolute;
+                            right: 0px;
+                            top: 30px;
+                            z-index: 6;
+                        }
+                    }
                     .filter-reset {
                         .reset-wrapper {
                             height: 29px;
@@ -415,6 +467,7 @@ header {
                     }
                 }
                 .products-part {
+                    width: 100%;
                     .products-list-filter {
                         height: 38px;
                         .products-count {
@@ -449,7 +502,15 @@ header {
                             }
                         }
                         .view-filter {
+                            .menu-filter {
+                                margin-left: 10px;
+                                display: block;
+                                p {
+                                    font-size: 10px;
+                                }
+                            }
                             .arrows-changer {
+                                display: none;
                                 .arrow-up {
                                     img {
                                         width: 9px;
@@ -493,38 +554,80 @@ header {
                         .top-products-block {
                             height: 278px;
                             a {
-                                img {
+                                .yellow-package {
+                                    margin: 32px auto 0;
+                                    height: 118px;
                                     width: 60px;
                                 }
-                                .yellow-package {
-                                    padding-top: 41px;
-                                }
                                 .white-package {
-                                    margin: 20px auto 0;
+                                    margin: 32px auto 0;
+                                    width: 60px;
+                                    height: 118px;
                                 }
                                 .dark-package {
-                                    margin: 20px auto 0;
+                                    margin: 32px auto 0;
+                                    height: 118px;
+                                    width: 60px;
                                 }
                                 .green-package {
-                                    margin: 68px 0 0;
-                                    width: 105px;
+                                    margin: 50px auto 16px;
+                                    width: 129px;
+                                    height: 84px;
                                 }
                                 .horizontal-line {
-                                    top: 177px;
+                                    margin: 14px auto 0;
                                 }
                                 .sale-block {
-                                    width: 35px;
+                                    width: 36px;
                                     height: 13px;
+                                    margin-left: -18px;
                                     p {
                                         font-size: 9px;
                                     }
                                 }
                                 .new-block {
-                                    width: 35px;
+                                    width: 36px;
                                     height: 13px;
+                                    margin-left: -18px;
                                     p {
                                         font-size: 9px;
                                     }
+                                }
+                                .products-titles {
+                                    margin-top: 13px;
+                                    h3 {
+                                        padding-bottom: 6px;
+                                        font-size: 10px;
+                                    }
+                                    .products-price {
+                                        font-size: 11px;
+                                        padding-bottom: 8px;
+                                    }
+                                    p {
+                                        font-size: 10px;
+                                        margin: 0 9px;
+                                        width: auto;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .showed-products-list {
+            .container {
+                .showed-products {
+                    .top-products-block {
+                        &.yellow-block {
+                            height: 278px;
+                            a {
+                                .yellow-package {
+                                    width: 60px;
+                                    padding-top: 34px;
+                                }
+                                .horizontal-line {
+                                    top: 177px;
                                 }
                                 .products-titles {
                                     top: 187px;
@@ -757,9 +860,10 @@ header {
                     -moz-transition: all 500ms;
                     -ms-transition: all 500ms;
                     -o-transition: all 500ms;
-                    .products-all{
+                    .products-all {
                         position: relative;
-                        .close-filter{
+                        .close-filter {
+                            display: block;
                             width: 15px;
                             height: 15px;
                             position: absolute;
@@ -877,41 +981,47 @@ header {
                         .top-products-block {
                             height: 278px;
                             a {
-                                img {
+                                .yellow-package {
+                                    margin: 32px auto 0;
+                                    height: 118px;
                                     width: 60px;
                                 }
-                                .yellow-package {
-                                    padding-top: 41px;
-                                }
                                 .white-package {
-                                    margin: 20px auto 0;
+                                    margin: 32px auto 0;
+                                    width: 60px;
+                                    height: 118px;
                                 }
                                 .dark-package {
-                                    margin: 20px auto 0;
+                                    margin: 32px auto 0;
+                                    height: 118px;
+                                    width: 60px;
                                 }
                                 .green-package {
-                                    margin: 68px 0 0;
-                                    width: 105px;
+                                    margin: 50px auto 16px;
+                                    width: 129px;
+                                    height: 84px;
                                 }
                                 .horizontal-line {
-                                    top: 177px;
+                                    margin: 14px auto 0;
                                 }
                                 .sale-block {
-                                    width: 35px;
+                                    width: 36px;
                                     height: 13px;
+                                    margin-left: -18px;
                                     p {
                                         font-size: 9px;
                                     }
                                 }
                                 .new-block {
-                                    width: 35px;
+                                    width: 36px;
                                     height: 13px;
+                                    margin-left: -18px;
                                     p {
                                         font-size: 9px;
                                     }
                                 }
                                 .products-titles {
-                                    top: 187px;
+                                    margin-top: 13px;
                                     h3 {
                                         padding-bottom: 6px;
                                         font-size: 10px;
@@ -1333,12 +1443,12 @@ header {
                         position: relative;
                         .close-filter {
                             width: 15px;
+                            display: block;
                             height: 15px;
                             position: absolute;
                             right: 0px;
                             top: 30px;
                             z-index: 6;
-                            
                         }
                     }
                     .filter-reset {
@@ -1453,41 +1563,47 @@ header {
                         .top-products-block {
                             height: 278px;
                             a {
-                                img {
+                                .yellow-package {
+                                    margin: 32px auto 0;
+                                    height: 118px;
                                     width: 60px;
                                 }
-                                .yellow-package {
-                                    padding-top: 41px;
-                                }
                                 .white-package {
-                                    margin: 20px auto 0;
+                                    margin: 32px auto 0;
+                                    width: 60px;
+                                    height: 118px;
                                 }
                                 .dark-package {
-                                    margin: 20px auto 0;
+                                    margin: 32px auto 0;
+                                    height: 118px;
+                                    width: 60px;
                                 }
                                 .green-package {
-                                    margin: 68px 0 0;
-                                    width: 105px;
+                                    margin: 52px auto 25px;
+                                    width: 113px;
+                                    height: 73px;
                                 }
                                 .horizontal-line {
-                                    top: 177px;
+                                    margin: 14px auto 0;
                                 }
                                 .sale-block {
-                                    width: 35px;
+                                    width: 36px;
                                     height: 13px;
+                                    margin-left: -18px;
                                     p {
                                         font-size: 9px;
                                     }
                                 }
                                 .new-block {
-                                    width: 35px;
+                                    width: 36px;
                                     height: 13px;
+                                    margin-left: -18px;
                                     p {
                                         font-size: 9px;
                                     }
                                 }
                                 .products-titles {
-                                    top: 187px;
+                                    margin-top: 13px;
                                     h3 {
                                         padding-bottom: 6px;
                                         font-size: 10px;

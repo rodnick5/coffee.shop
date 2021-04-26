@@ -139,14 +139,20 @@
                         text-transform: uppercase;
                     }
                     .country-marks {
-                        margin-top: 20px;
+                        margin-top: 13px;
+                        transition: all 0.4s;
+                        overflow: hidden;
                         height: 220px;
                         width: 100%;
                         display: flex;
                         flex-direction: column;
-                        justify-content: space-between;
+                        -webkit-transition: all 0.4s;
+                        -moz-transition: all 0.4s;
+                        -ms-transition: all 0.4s;
+                        -o-transition: all 0.4s;
                         .marks-link {
                             width: 100%;
+                            margin-top: 7px;
                             a {
                                 font-size: 12px;
                                 font-weight: 500;
@@ -156,6 +162,7 @@
                     }
                     .more-wrapper {
                         width: 100%;
+                        cursor: pointer;
                         height: 24px;
                         display: flex;
                         align-items: center;
@@ -174,14 +181,16 @@
                         font-weight: 800;
                     }
                     .trade-list {
-                        margin-top: 20px;
+                        margin-top: 13px;
                         height: 220px;
                         width: 100%;
+                        overflow: hidden;
                         display: flex;
                         flex-direction: column;
-                        justify-content: space-between;
+
                         .marks-link {
                             width: 100%;
+                            margin-top: 7px;
                             a {
                                 text-transform: uppercase;
                                 font-weight: 500;
@@ -193,6 +202,7 @@
                     .more-wrapper {
                         width: 100%;
                         height: 24px;
+                        cursor: pointer;
                         display: flex;
                         align-items: center;
                         justify-content: center;
@@ -205,7 +215,7 @@
                 .sale-wrapper {
                     width: 100%;
                     margin: 16px 0 10px 0;
-                    
+
                     .sale-button {
                         color: #b03235;
                         font-size: 12px;
@@ -272,7 +282,7 @@
                         height: 100%;
                         display: flex;
                         align-items: center;
-                        .menu-filter{
+                        .menu-filter {
                             display: none;
                         }
                         .arrows-changer {
@@ -422,7 +432,7 @@
                     }
                 }
                 .top-products-wrapper {
-                    padding: 24px 0 24px 0;
+                    padding: 24px 0;
                     display: grid;
                     grid-template-columns: 1fr 1fr 1fr;
                     gap: 25px;
@@ -433,12 +443,16 @@
                         text-align: center;
 
                         a {
+                            position: relative;
+                            padding-top: 12px;
                             display: block;
                             width: 100%;
                             height: 100%;
+
                             .products-titles {
-                                position: absolute;
-                                top: 265px;
+                                display: flex;
+                                flex-direction: column;
+                                margin-top: 26px;
                                 width: 100%;
 
                                 h3 {
@@ -472,7 +486,9 @@
                             }
                             .sale-block {
                                 width: 48px;
-                                margin: 12px auto 0;
+                                position: absolute;
+                                left: 50%;
+                                margin-left: -24px;
                                 height: 21px;
                                 background-color: #a7171a;
                                 display: flex;
@@ -486,7 +502,9 @@
                             }
                             .new-block {
                                 width: 44px;
-                                margin: 9px auto 0;
+                                position: absolute;
+                                margin-left: -22px;
+                                left: 50%;
                                 height: 21px;
                                 background-color: #56bcab;
                                 display: flex;
@@ -500,24 +518,32 @@
                                 }
                             }
                             .yellow-package {
-                                padding-top: 56px;
+                                display: block;
+                                margin: 44px auto 0;
+                                width: 83px;
+                                height: 162px;
                             }
                             .white-package {
                                 display: block;
-                                margin: 30px auto 0;
+                                margin: 44px auto 0;
+                                height: 162px;
+                                width: 83px;
                             }
                             .dark-package {
-                                margin: 34px 0 0;
+                                display: block;
+                                margin: 44px auto 0;
+                                width: 83px;
+                                height: 162px;
                             }
                             .green-package {
-                                margin: 88px 0 0;
+                                display: block;
+                                margin: 76px auto 15px;
+                                width: 178px;
+                                height: 115px;
                             }
                             .horizontal-line {
-                                display: block;
-                                position: absolute;
-                                top: 248px;
-                                left: 50%;
-                                margin-left: -37%;
+                                display: inline-block;
+                                margin: 26px auto 0;
                                 width: 74%;
                                 height: 1px;
                                 background-color: #eaeaea;
