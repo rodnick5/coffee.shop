@@ -220,6 +220,20 @@ header {
     .container {
         width: 1200px;
     }
+    .image-slider {
+        &.swiper-container {
+            .swiper-wrapper {
+                .swiper-slide {
+                    &.coffee-slide {
+                        .slide-title {
+                            margin-left: -500px;
+                            width: 200px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
     .container {

@@ -1,27 +1,24 @@
 let mySwiper = new Swiper('.swiper-container', {
   // Optional parameters
   direction: 'horizontal',
-
-
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
   },
-
   // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-
 });
-let CntrBtn = document.getElementById('countryBtn');
-CntrBtn.addEventListener('click', () => {
+
+let countryBtn = document.getElementById('countryBtn');
+countryBtn.addEventListener('click', function func1 (){
   document.getElementById('countryMarks').classList.toggle('country-list-active');
   document.getElementById('imgCountry').classList.toggle('rotate180');
 });
 let TrdBtn = document.getElementById('trdBtn');
-TrdBtn.addEventListener('click' , () => {
+TrdBtn.addEventListener('click' , function func2() {
   document.getElementById('trdList').classList.toggle('list-trade-active');
   document.getElementById('imgTrade').classList.toggle('rotate180');
 });
@@ -39,7 +36,7 @@ function backToTop() {
       window.scrollBy(0, -30);
       setTimeout(backToTop, 0);
     }
-  }
+  };
 
   function trackScroll(){
     let scrollHeight = document.documentElement.scrollHeight;
@@ -56,7 +53,8 @@ function backToTop() {
     } else{
       goTopBtn.classList.remove('back-to-top-show');
     }
-  }
+  };
+
   let goTopBtn = document.getElementById('back-top');
   window.addEventListener('scroll', trackScroll);
   goTopBtn.addEventListener('click', backToTop);
@@ -68,3 +66,7 @@ function backToTop() {
     nav.classList.toggle('active-nav-line');
   });
   
+let userName = prompt('What is your name?' , '');
+if(userName){
+  alert(`Your name is ${userName}!`);
+}
