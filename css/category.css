@@ -394,7 +394,12 @@ header .header-this-page .page-name {
 
 .content-page {
   width: 100%;
-  padding: 20px 0 20px 0;
+  padding: 20px 0 0 0;
+}
+
+.content-page .content-wrapper {
+  margin: 0 0 2px 0;
+  padding: 0 0 25px 0;
   background-color: #f3f5f7;
 }
 
@@ -1186,6 +1191,11 @@ header .header-this-page .page-name {
   background-color: #eaeaea;
 }
 
+.content-page .showed-products-list {
+  background-color: #f3f5f7;
+  margin: 0 0 2px 0;
+}
+
 .content-page .showed-products-list .container {
   padding-top: 54px;
 }
@@ -1197,7 +1207,8 @@ header .header-this-page .page-name {
 }
 
 .content-page .showed-products-list .container .showed-products {
-  margin: 42px 0 92px 0;
+  margin: 42px 0 0 0;
+  padding: 0 0 92px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -1,8 +1,10 @@
 .content-page {
     width: 100%;
-    padding: 20px 0 20px 0;
-    background-color: #f3f5f7;
+    padding: 20px 0 0 0;
     .content-wrapper {
+        margin: 0 0 2px 0;
+        padding: 0 0 25px 0;
+        background-color: #f3f5f7;
         .container {
             display: flex;
             justify-content: space-between;
@@ -555,6 +557,8 @@
         }
     }
     .showed-products-list {
+        background-color: #f3f5f7;
+        margin: 0 0 2px 0;
         .container {
             padding-top: 54px;
             h2 {
@@ -563,7 +567,8 @@
                 font-weight: 600;
             }
             .showed-products {
-                margin: 42px 0 92px 0;
+                margin: 42px 0 0 0;
+                padding: 0 0 92px;
                 display: flex;
                 justify-content: flex-start;
                 .top-products-block {

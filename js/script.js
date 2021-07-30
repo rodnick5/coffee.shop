@@ -65,8 +65,3 @@ function backToTop() {
     menuBtn.classList.toggle('active-menu-btn');
     nav.classList.toggle('active-nav-line');
   });
-  
-let userName = prompt('What is your name?' , '');
-if(userName){
-  alert(`Your name is ${userName}!`);
-}

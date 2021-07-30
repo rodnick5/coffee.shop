@@ -294,24 +294,24 @@ header .header-page .page-name li {
 }
 
 .product-content {
+  margin: 0 0 70px 0;
   width: 100%;
 }
 
 .product-content .container .product-content-blocks {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 24px;
 }
 
 .product-content .container .product-content-blocks .product-left-side {
-  width: 50%;
+  width: 100%;
 }
 
 .product-content .container .product-content-blocks .product-left-side .product-img-bcg {
-  width: 588px;
+  width: 100%;
   height: 588px;
   margin: 0 0 5px 0;
   background-color: #f2f4f6;
@@ -332,6 +332,7 @@ header .header-page .page-name li {
 }
 
 .product-content .container .product-content-blocks .product-left-side .product-mini-img {
+  margin: 0 0 87px 23px;
   width: 88px;
   height: 88px;
   border: 1px solid #ececec;
@@ -351,14 +352,183 @@ header .header-page .page-name li {
   height: 69px;
 }
 
+.product-content .container .product-content-blocks .product-left-side .product-about-block {
+  width: 487px;
+}
+
 .product-content .container .product-content-blocks .product-left-side .product-about-block .about-title {
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
+  margin: 0 0 34px 0;
+}
+
+.product-content .container .product-content-blocks .product-left-side .product-about-block .leaf-block {
+  position: relative;
+  margin: 0 0 20px 0;
+  width: 100%;
+  height: 145px;
+  background: white;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0)), to(#f5f6ed));
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, #f5f6ed 100%);
+}
+
+.product-content .container .product-content-blocks .product-left-side .product-about-block .leaf-block .leaf-big {
+  position: absolute;
+  left: 303px;
+  top: 77px;
+}
+
+.product-content .container .product-content-blocks .product-left-side .product-about-block .leaf-block .leaf-medium {
+  width: 49px;
+  height: 31px;
+  position: absolute;
+  left: 114px;
+  top: 62px;
+  transform: rotate(-50deg);
+  -webkit-transform: rotate(-50deg);
+  -moz-transform: rotate(-50deg);
+  -ms-transform: rotate(-50deg);
+  -o-transform: rotate(-50deg);
+}
+
+.product-content .container .product-content-blocks .product-left-side .product-about-block .leaf-block .leaf-small {
+  height: 18px;
+  width: 30px;
+  opacity: 0.5;
+  transform: rotate(90deg);
+  position: absolute;
+  left: 38px;
+  top: 27px;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+
+.product-content .container .product-content-blocks .product-left-side .product-about-block .about-text {
+  font-size: 14px;
+  width: 100%;
+  font-weight: 600;
+  margin: 0 0 28px 0;
+  font-family: "Raleway";
+}
+
+.product-content .container .product-content-blocks .product-left-side .product-about-block .horizontal-line {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #eaeaea;
 }
 
 .product-content .container .product-content-blocks .product-right-side {
-  width: 50%;
+  width: 100%;
+}
+
+.product-content .container .product-content-blocks .product-right-side .product-name .name-text {
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.product-content .container .product-content-blocks .product-right-side .product-code .code-text {
+  font-size: 14px;
+}
+
+.product-content .container .product-content-blocks .product-right-side .product-settings {
+  width: 100%;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.product-content .container .product-content-blocks .product-right-side .product-settings .product-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-content .container .product-content-blocks .product-right-side .product-settings .product-price .price-text {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.product-content .container .product-content-blocks .product-right-side .product-settings .product-price .price-info {
+  font-size: 12px;
+  color: #848484;
+}
+
+.product-content .container .product-content-blocks .product-right-side .product-settings .product-weight {
+  width: 100%;
+  height: 54px;
+  background-color: #dedede;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-content .container .product-content-blocks .product-right-side .product-settings .product-payment {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 131px 268px 170px;
+      grid-template-columns: 131px 268px 170px;
+  -ms-grid-rows: 54px;
+      grid-template-rows: 54px;
+  gap: 10px;
+}
+
+.product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-quintity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-incart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #000000;
+}
+
+.product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-incart a {
+  color: #ffffff;
+}
+
+.product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-paypal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffc439;
 }
 
 .showed-products-list {
