@@ -353,6 +353,7 @@ header .header-page .page-name li {
 }
 
 .product-content .container .product-content-blocks .product-left-side .product-about-block {
+  border-bottom: 1px solid #eaeaea;
   width: 487px;
 }
 
@@ -407,28 +408,32 @@ header .header-page .page-name li {
 }
 
 .product-content .container .product-content-blocks .product-left-side .product-about-block .about-text {
-  font-size: 14px;
   width: 100%;
-  font-weight: 600;
   margin: 0 0 28px 0;
-  font-family: "Raleway";
 }
 
-.product-content .container .product-content-blocks .product-left-side .product-about-block .horizontal-line {
-  display: block;
-  width: 100%;
-  height: 1px;
-  background-color: #eaeaea;
+.product-content .container .product-content-blocks .product-left-side .product-about-block .about-text p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
 }
 
 .product-content .container .product-content-blocks .product-right-side {
   width: 100%;
 }
 
+.product-content .container .product-content-blocks .product-right-side .product-name {
+  margin: 0 0 42px 0;
+}
+
 .product-content .container .product-content-blocks .product-right-side .product-name .name-text {
   font-size: 28px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.product-content .container .product-content-blocks .product-right-side .product-code {
+  margin: 0 0 20px 0;
 }
 
 .product-content .container .product-content-blocks .product-right-side .product-code .code-text {
@@ -438,10 +443,11 @@ header .header-page .page-name li {
 .product-content .container .product-content-blocks .product-right-side .product-settings {
   width: 100%;
   border-top: 1px solid #eaeaea;
-  border-bottom: 1px solid #eaeaea;
+  padding: 22px 0 22px 0;
 }
 
 .product-content .container .product-content-blocks .product-right-side .product-settings .product-price {
+  margin: 0 0 28px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -457,6 +463,7 @@ header .header-page .page-name li {
 .product-content .container .product-content-blocks .product-right-side .product-settings .product-price .price-text {
   font-weight: 700;
   font-size: 20px;
+  margin: 0 22px 0 0;
 }
 
 .product-content .container .product-content-blocks .product-right-side .product-settings .product-price .price-info {
@@ -467,6 +474,8 @@ header .header-page .page-name li {
 .product-content .container .product-content-blocks .product-right-side .product-settings .product-weight {
   width: 100%;
   height: 54px;
+  padding: 0 16px 0 16px;
+  margin: 0 0 23px 0;
   background-color: #dedede;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -477,6 +486,10 @@ header .header-page .page-name li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.product-content .container .product-content-blocks .product-right-side .product-settings .product-weight .weight-text {
+  font-size: 14px;
 }
 
 .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment {
@@ -499,6 +512,28 @@ header .header-page .page-name li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #dedede;
+  padding: 0 17px 0 17px;
+}
+
+.product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-quintity a {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 14px;
+}
+
+.product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-quintity a .quintity-icon {
+  margin: 2px 0 0 0;
+  width: 12px;
+  height: 12px;
 }
 
 .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-incart {
@@ -512,10 +547,31 @@ header .header-page .page-name li {
       -ms-flex-align: center;
           align-items: center;
   background-color: #000000;
+  padding: 0 36px 0 36px;
 }
 
 .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-incart a {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-incart a .cart-icon {
+  width: 18px;
+  height: 18px;
+  fill-opacity: 0;
+  stroke: #ffffff;
+  stroke-width: 2px;
 }
 
 .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-paypal {
@@ -529,6 +585,176 @@ header .header-page .page-name li {
       -ms-flex-align: center;
           align-items: center;
   background-color: #ffc439;
+}
+
+.product-content .container .product-content-blocks .product-right-side .product-info {
+  margin: 0 0 66px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 66px 66px;
+      grid-template-rows: 66px 66px;
+  border-bottom: 1px solid #eaeaea;
+  border-top: 1px solid #eaeaea;
+}
+
+.product-content .container .product-content-blocks .product-right-side .product-info .info-check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-content .container .product-content-blocks .product-right-side .product-info .info-check .check-text {
+  color: #56bcab;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.product-content .container .product-content-blocks .product-right-side .product-info .info-check .check-icon {
+  width: 16px;
+  height: 16px;
+  margin: 0 22px 0 22px;
+  fill-opacity: 0;
+  stroke: #56bcab;
+  stroke-width: 3px;
+}
+
+.product-content .container .product-content-blocks .product-right-side .product-info .info-phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-content .container .product-content-blocks .product-right-side .product-info .info-phone .phone-text {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.product-content .container .product-content-blocks .product-right-side .product-info .info-phone .phone-icon {
+  width: 16px;
+  margin: 0 22px 0 22px;
+}
+
+.product-content .container .product-content-blocks .product-right-side .product-info .info-delivery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-content .container .product-content-blocks .product-right-side .product-info .info-delivery .truck-icon {
+  width: 16px;
+  margin: 0 22px 0 22px;
+}
+
+.product-content .container .product-content-blocks .product-right-side .product-info .info-delivery .delivery-text {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.product-content .container .product-content-blocks .product-right-side .product-info .info-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-content .container .product-content-blocks .product-right-side .product-info .info-email .email-text {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.product-content .container .product-content-blocks .product-right-side .product-info .info-email .email-icon {
+  margin: 0 22px 0 22px;
+  width: 22px;
+}
+
+.product-content .container .product-content-blocks .product-right-side .product-ingridients {
+  width: 100%;
+}
+
+.product-content .container .product-content-blocks .product-right-side .product-ingridients .title-ingridient {
+  margin: 0 0 26px 0;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.product-content .container .product-content-blocks .product-right-side .product-ingridients .block-ingridient {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 218px 1fr;
+      grid-template-columns: 218px 1fr;
+  -ms-grid-rows: 45px;
+      grid-template-rows: 45px;
+  margin: 0 0 57px 0;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.product-content .container .product-content-blocks .product-right-side .product-ingridients .block-ingridient p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.product-content .container .product-content-blocks .product-right-side .product-ingridients .title-inform {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 36px;
+}
+
+.product-content .container .product-content-blocks .product-right-side .product-ingridients .block-inform {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 218px 1fr;
+      grid-template-columns: 218px 1fr;
+  -ms-grid-rows: 45px;
+      grid-template-rows: 45px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 57px;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.product-content .container .product-content-blocks .product-right-side .product-ingridients .block-inform p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.product-content .container .product-content-blocks .product-right-side .product-decription {
+  border-bottom: 1px solid #eaeaea;
+  width: 486px;
+}
+
+.product-content .container .product-content-blocks .product-right-side .product-decription .title-description {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 42px 0;
+}
+
+.product-content .container .product-content-blocks .product-right-side .product-decription .description-text {
+  line-height: 1.4;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 0 27px 0;
 }
 
 .showed-products-list {

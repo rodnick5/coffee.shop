@@ -10,6 +10,22 @@
     <link rel="stylesheet" href="css/product.css">
 </head>
 <body class="page">
+    <svg display="none">
+        <symbol viewBox="0 0 76.887 55.552" id="checkIcon">
+            <g>
+                <polygon style="fill:#231F20;" points="34.373,49.541 76.887,5.889 70.739,0 28.426,43.458 6.078,20.632 0,26.585 22.488,49.557 
+                    22.488,49.557 28.517,55.552 28.426,55.467 28.517,55.552 34.373,49.541 	"/>
+            </g>
+        </symbol>
+    </svg>
+    <svg display="none">
+        <symbol viewBox="0 0 32 32" id="cartIcon">
+            <path class="st1" d="M11,19L6.4,4.5C6.2,3.6,5.3,3,4.4,3H2"/>
+            <path class="st1" d="M26,23H8.4c-1.1,0-2-0.9-2-2v0c0-1.1,0.9-1.8,2-2L29,16V6H11"/>
+            <circle class="st1" cx="11" cy="28" r="1"/>
+            <circle class="st1" cx="24" cy="28" r="1"/>
+        </symbol>
+    </svg>
     <div class="back-to-top" id="back-top"><img src="svg/arrowUpIcon.svg" class="svg" alt=""></div>
     <header>
         <div class="main-settings-wrapper">
@@ -95,8 +111,7 @@
                     <img src="img/leaf1.png" class="leaf-medium" alt="">
                     <img src="img/leaf1.png" class="leaf-small" alt="">
                 </div>
-                <div class="about-text"><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p></div>
-                <div class="horizontal-line"></div>    
+                <div class="about-text"><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p></div>   
             </div>
             </div>
             <div class="product-right-side">
@@ -110,26 +125,26 @@
                     
                 <div class="product-weight"><p class="weight-text">500 g</p><img src="svg/arrowDown.svg" class="svg" alt=""></div>
                 <div class="product-payment">
-                    <div class="product-quintity"><p>Menge</p><a href="">1<img src="svg/arrowDown.svg" class="svg" alt=""></a></div>
-                    <div class="product-incart"><a href=""><img src="svg/cartIcon.svg" class="svg" alt="">In den Warenkorb</a></div>
+                    <div class="product-quintity"><a href=""><p>Menge</p><p>1</p><img src="svg/arrowDown.svg" class="quintity-icon" alt=""></a></div>
+                    <div class="product-incart"><a href=""><svg class="cart-icon"><use xlink:href="#cartIcon"></use></svg>In den Warenkorb</a></div>
                     <div class="product-paypal"><img src="img/payPalLogo.png" alt=""></div>
                 </div>
             </div>
                 <div class="product-info">
-                    <div class="info-stock"><img src="svg/check.svg" class="svg " alt=""><p class="stock-text">Verfügbar</p></div>
-                    <div class="info-text"><img src="svg/phoneIcon.svg" class="svg" alt=""><p class="phone-text"> +49 8031 221 055 0 </p></div>
-                    <div class="info-delivery"><img src="svg/truckIcon.svg" class="svg truck-icon" alt=""><p class="delivery-text">Versandinformationen ›</p></div>
-                    <div class="info-email"><img src="svg/letterIconWhite.svg" class="svg" alt=""><p class="email-text">Schreiben Sie uns eine E-Mail</p></div>
+                    <div class="info-check"><svg class="check-icon"><use xlink:href="#checkIcon"></use></svg><p class="check-text">Verfügbar</p></div>
+                    <div class="info-delivery"><img src="svg/truckIcon.svg" class="truck-icon" alt=""><p class="delivery-text">Versandinformationen ›</p></div>
+                    <div class="info-phone"><img src="svg/phoneIcon.svg" class="phone-icon" alt=""><p class="phone-text"> +49 8031 221 055 0 </p></div>
+                    <div class="info-email"><img src="svg/letterIconWhite.svg" class="email-icon" alt=""><p class="email-text">Schreiben Sie uns eine E-Mail</p></div>
                 </div>
                 <div class="product-ingridients">
-                    <h2>Zutaten</h2>
-                    <div><p>Zutaten</p><p>Röstkaffee</p></div>
-                    <h2>informationen</h2>
-                    <div><p>Lagerhinweis</p><p>Vor Wärme und Feuchtigkeit schützen</p></div>
+                    <h2 class="title-ingridient">Zutaten</h2>
+                    <div class="block-ingridient"><p>Zutaten</p><p>Röstkaffee</p></div>
+                    <h2 class="title-inform">informationen</h2>
+                    <div class="block-inform"><p>Lagerhinweis</p><p>Vor Wärme und Feuchtigkeit schützen</p></div>
                 </div>
                 <div class="product-decription">
-                    <h2>besondere Röstbohnen</h2>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                    <h2 class="title-description">besondere Röstbohnen</h2>
+                    <p class="description-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
                 </div>
             </div>
         </div>
@@ -226,7 +241,7 @@
                 <div class="email-block">
                     <h3>Schreiben Sie uns eine E-Mail</h3>
                     <div class="info-part">
-                    <img src="svg/letterIcon.svg" class="svg email-img" alt="">
+                    <img src="svg/letterIconblack.svg" class="svg email-img" alt="">
                     <p>info@techdivision.com</p>
                 </div>
                 </div>
