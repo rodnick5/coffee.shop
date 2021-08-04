@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+    font-family: "Raleway";
+    font-weight: 400;
+    outline: none;
+    border: none;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+}
+.container {
+    margin: 0 auto;
+}
+img.svg {
+    width: 16px;
+    height: 16px;
+    opacity: 0.5;
+}
+
+@import "_content";
+@import "_footer";
+@import "_adaptive";
+
