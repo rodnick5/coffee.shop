@@ -173,10 +173,10 @@
         .container {
             .product-content-blocks {
                 .product-left-side {
-                    .product-img-bcg{
+                    .product-img-bcg {
                         height: 488px;
                     }
-                    .product-mini-block{
+                    .product-mini-block {
                         margin: 0 0 34px 0;
                     }
                     .product-about-block {
@@ -238,35 +238,35 @@
                     .product-info {
                         grid-template-columns: 1fr 1.4fr;
                         margin: 0 0 42px 0;
-                        .info-check{
-                            .check-icon{
+                        .info-check {
+                            .check-icon {
                                 margin: 0 14px 0 0;
                             }
-                            .check-text{
+                            .check-text {
                                 font-size: 12px;
                             }
                         }
-                        .info-delivery{
-                            .truck-icon{
+                        .info-delivery {
+                            .truck-icon {
                                 margin: 0 19px 0 0;
                             }
-                            .delivery-text{
+                            .delivery-text {
                                 font-size: 12px;
                             }
                         }
-                        .info-phone{
-                            .phone-icon{
+                        .info-phone {
+                            .phone-icon {
                                 margin: 0 10px 0 0;
                             }
-                            .phone-text{
+                            .phone-text {
                                 font-size: 12px;
                             }
                         }
-                        .info-email{
-                            .email-icon{
+                        .info-email {
+                            .email-icon {
                                 margin: 0 14px 0 0;
                             }
-                            .email-text{
+                            .email-text {
                                 font-size: 12px;
                             }
                         }
@@ -596,10 +596,10 @@
                 grid-template-rows: 0.6fr 1fr;
                 grid-template-columns: 1fr;
                 .product-left-side {
-                    .product-img-bcg{
+                    .product-img-bcg {
                         height: 488px;
                     }
-                    .product-mini-block{
+                    .product-mini-block {
                         margin: 0;
                     }
                     .product-about-block {
@@ -649,7 +649,7 @@
                                         font-size: 12px;
                                         margin: 0 20px 0 0;
                                     }
-                                    .quintity-number{
+                                    .quintity-number {
                                         font-size: 12px;
                                         margin: 0 45px 0 0;
                                     }
@@ -670,35 +670,35 @@
                     .product-info {
                         grid-template-columns: 1fr 1.4fr;
                         margin: 0 0 42px 0;
-                        .info-check{
-                            .check-icon{
+                        .info-check {
+                            .check-icon {
                                 margin: 0 14px 0 0;
                             }
-                            .check-text{
+                            .check-text {
                                 font-size: 12px;
                             }
                         }
-                        .info-delivery{
-                            .truck-icon{
+                        .info-delivery {
+                            .truck-icon {
                                 margin: 0 19px 0 0;
                             }
-                            .delivery-text{
+                            .delivery-text {
                                 font-size: 12px;
                             }
                         }
-                        .info-phone{
-                            .phone-icon{
+                        .info-phone {
+                            .phone-icon {
                                 margin: 0 10px 0 0;
                             }
-                            .phone-text{
+                            .phone-text {
                                 font-size: 12px;
                             }
                         }
-                        .info-email{
-                            .email-icon{
+                        .info-email {
+                            .email-icon {
                                 margin: 0 14px 0 0;
                             }
-                            .email-text{
+                            .email-text {
                                 font-size: 12px;
                             }
                         }
@@ -1170,10 +1170,10 @@
                 grid-template-rows: 0.6fr 1fr;
                 grid-template-columns: 1fr;
                 .product-left-side {
-                    .product-img-bcg{
+                    .product-img-bcg {
                         height: 488px;
                     }
-                    .product-mini-block{
+                    .product-mini-block {
                         margin: 0;
                     }
                     .product-about-block {
@@ -1196,14 +1196,25 @@
                     }
                     .product-ingridients {
                         .block-ingridient {
-                            grid-template-columns: 170px 1fr;
+                            grid-template-columns: 1fr 1fr;
+                            p{
+                                font-size: 12px;
+                            }
                         }
                         .block-inform {
-                            grid-template-columns: 170px 1fr;
+                            grid-template-columns: 1fr 1fr;
+                            p{
+                                font-size: 12px;
+                            }
                         }
                     }
                     .product-settings {
                         padding: 10px 0 22px 0;
+                        .product-weight{
+                            .weight-text{
+                                font-size: 12px;
+                            }
+                        }
                         .product-price {
                             .price-text {
                                 font-size: 19px;
@@ -1214,26 +1225,25 @@
                             }
                         }
                         .product-payment {
-                            grid-template-columns: 0.8fr 1.2fr 1fr;
+                            grid-template-columns: 1.1fr 0.9fr 1fr;
                             .product-quintity {
-                                padding: 0 10px;
+                                padding: 0 6px;
                                 a {
-                                
                                     .quintity-text {
-                                        font-size: 12px;
+                                        font-size: 11px;
                                     }
-                                    .quintity-number{
-                                        font-size: 12px;
+                                    .quintity-number {
+                                        font-size: 11px;
                                     }
                                 }
                             }
                             .product-incart {
                                 a {
-                                    font-size: 14px;
+                                    font-size: 0;
                                     .cart-icon {
                                         width: 24px;
                                         height: 24px;
-                                        margin: 0 20px 0 0;
+                                        margin: 0;
                                     }
                                 }
                             }
@@ -1242,36 +1252,36 @@
                     .product-info {
                         grid-template-columns: 1fr 1.4fr;
                         margin: 0 0 42px 0;
-                        .info-check{
-                            .check-icon{
+                        .info-check {
+                            .check-icon {
                                 margin: 0 14px 0 0;
                             }
-                            .check-text{
-                                font-size: 12px;
+                            .check-text {
+                                font-size: 10px;
                             }
                         }
-                        .info-delivery{
-                            .truck-icon{
+                        .info-delivery {
+                            .truck-icon {
                                 margin: 0 19px 0 0;
                             }
-                            .delivery-text{
-                                font-size: 12px;
+                            .delivery-text {
+                                font-size: 10px;
                             }
                         }
-                        .info-phone{
-                            .phone-icon{
+                        .info-phone {
+                            .phone-icon {
                                 margin: 0 10px 0 0;
                             }
-                            .phone-text{
-                                font-size: 12px;
+                            .phone-text {
+                                font-size: 10px;
                             }
                         }
-                        .info-email{
-                            .email-icon{
+                        .info-email {
+                            .email-icon {
                                 margin: 0 14px 0 0;
                             }
-                            .email-text{
-                                font-size: 12px;
+                            .email-text {
+                                font-size: 10px;
                             }
                         }
                     }
