@@ -1923,7 +1923,7 @@ footer .footer-services-wrapper .container .footer-services .social-part .social
     height: 488px;
   }
   .product-content .container .product-content-blocks .product-left-side .product-mini-block {
-    margin: 0 0 34px 0;
+    margin: 0;
   }
   .product-content .container .product-content-blocks .product-left-side .product-about-block {
     display: none;
@@ -1964,8 +1964,18 @@ footer .footer-services-wrapper .container .footer-services .social-part .social
   .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-quintity {
     padding: 0 10px;
   }
-  .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-quintity a p {
+  .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-quintity a {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-quintity a .quintity-text {
     font-size: 12px;
+    margin: 0 20px 0 0;
+  }
+  .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-quintity a .quintity-number {
+    font-size: 12px;
+    margin: 0 45px 0 0;
   }
   .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-incart a {
     font-size: 14px;
@@ -1973,7 +1983,7 @@ footer .footer-services-wrapper .container .footer-services .social-part .social
   .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-incart a .cart-icon {
     width: 24px;
     height: 24px;
-    margin: 0;
+    margin: 0 20px 0 0;
   }
   .product-content .container .product-content-blocks .product-right-side .product-info {
     -ms-grid-columns: 1fr 1.4fr;
@@ -2438,6 +2448,106 @@ footer .footer-services-wrapper .container .footer-services .social-part .social
   }
   header .header-this-page .page-name {
     font-size: 22px;
+  }
+  .product-content .container .product-content-blocks {
+    -ms-grid-rows: 0.6fr 1fr;
+        grid-template-rows: 0.6fr 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .product-content .container .product-content-blocks .product-left-side .product-img-bcg {
+    height: 488px;
+  }
+  .product-content .container .product-content-blocks .product-left-side .product-mini-block {
+    margin: 0;
+  }
+  .product-content .container .product-content-blocks .product-left-side .product-about-block {
+    display: none;
+    height: 0;
+    width: 0;
+  }
+  .product-content .container .product-content-blocks .product-left-side .product-about-block .leaf-block .leaf-big {
+    left: 248px !important;
+  }
+  .product-content .container .product-content-blocks .product-right-side .product-name {
+    margin: 0 0 12px 0;
+  }
+  .product-content .container .product-content-blocks .product-right-side .product-name .name-text {
+    font-size: 22px;
+  }
+  .product-content .container .product-content-blocks .product-right-side .product-ingridients .block-ingridient {
+    -ms-grid-columns: 170px 1fr;
+        grid-template-columns: 170px 1fr;
+  }
+  .product-content .container .product-content-blocks .product-right-side .product-ingridients .block-inform {
+    -ms-grid-columns: 170px 1fr;
+        grid-template-columns: 170px 1fr;
+  }
+  .product-content .container .product-content-blocks .product-right-side .product-settings {
+    padding: 10px 0 22px 0;
+  }
+  .product-content .container .product-content-blocks .product-right-side .product-settings .product-price .price-text {
+    font-size: 19px;
+    margin: 0 16px 0 0;
+  }
+  .product-content .container .product-content-blocks .product-right-side .product-settings .product-price .price-info {
+    font-size: 11px;
+  }
+  .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment {
+    -ms-grid-columns: 0.8fr 1.2fr 1fr;
+        grid-template-columns: 0.8fr 1.2fr 1fr;
+  }
+  .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-quintity {
+    padding: 0 10px;
+  }
+  .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-quintity a .quintity-text {
+    font-size: 12px;
+  }
+  .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-quintity a .quintity-number {
+    font-size: 12px;
+  }
+  .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-incart a {
+    font-size: 14px;
+  }
+  .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-incart a .cart-icon {
+    width: 24px;
+    height: 24px;
+    margin: 0 20px 0 0;
+  }
+  .product-content .container .product-content-blocks .product-right-side .product-info {
+    -ms-grid-columns: 1fr 1.4fr;
+        grid-template-columns: 1fr 1.4fr;
+    margin: 0 0 42px 0;
+  }
+  .product-content .container .product-content-blocks .product-right-side .product-info .info-check .check-icon {
+    margin: 0 14px 0 0;
+  }
+  .product-content .container .product-content-blocks .product-right-side .product-info .info-check .check-text {
+    font-size: 12px;
+  }
+  .product-content .container .product-content-blocks .product-right-side .product-info .info-delivery .truck-icon {
+    margin: 0 19px 0 0;
+  }
+  .product-content .container .product-content-blocks .product-right-side .product-info .info-delivery .delivery-text {
+    font-size: 12px;
+  }
+  .product-content .container .product-content-blocks .product-right-side .product-info .info-phone .phone-icon {
+    margin: 0 10px 0 0;
+  }
+  .product-content .container .product-content-blocks .product-right-side .product-info .info-phone .phone-text {
+    font-size: 12px;
+  }
+  .product-content .container .product-content-blocks .product-right-side .product-info .info-email .email-icon {
+    margin: 0 14px 0 0;
+  }
+  .product-content .container .product-content-blocks .product-right-side .product-info .info-email .email-text {
+    font-size: 12px;
+  }
+  .product-content .container .product-content-blocks .product-right-side .product-ingridients .title-ingridient {
+    margin: 0 0 26px 0;
+  }
+  .product-content .container .product-content-blocks .product-right-side .product-ingridients .title-inform {
+    margin: 0 0 26px 0;
   }
   .recomended-products-list .container .recomended-title {
     padding: 30px 0 0 0;
