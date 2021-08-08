@@ -201,22 +201,27 @@ header {
                         height: 411px;
                     }
                 }
-                .product-mini-img {
-                    margin: 0 0 87px 23px;
-                    width: 88px;
-                    height: 88px;
-                    border: 1px solid #ececec;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    img {
-                        width: 35px;
-                        height: 69px;
+                .product-mini-block {
+                    width: 100%;
+                    margin: 0 0 87px 0;
+                    .product-mini-img {
+                        margin:  0 0 0 23px;
+                        width: 88px;
+                        height: 88px;
+                        border: 1px solid #ececec;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        img {
+                            width: 35px;
+                            height: 69px;
+                        }
                     }
                 }
+
                 .product-about-block {
                     border-bottom: 1px solid #eaeaea;
-                    width: 487px;
+                    width: 100%;
                     .about-title {
                         font-size: 20px;
                         font-weight: 700;
@@ -438,6 +443,7 @@ header {
                     }
                 }
                 .product-ingridients {
+                    margin: 0 0 57px;
                     width: 100%;
                     .title-ingridient {
                         margin: 0 0 26px 0;
@@ -469,7 +475,7 @@ header {
                         grid-template-columns: 218px 1fr;
                         grid-template-rows: 45px;
                         align-items: center;
-                        margin: 0 0 57px;
+                        
                         border-top: 1px solid #eaeaea;
                         border-bottom: 1px solid #eaeaea;
                         p {
@@ -480,7 +486,7 @@ header {
                 }
                 .product-decription {
                     border-bottom: 1px solid #eaeaea;
-                    width: 486px;
+                    width: 100%;
                     .title-description {
                         font-size: 20px;
                         font-weight: 700;
@@ -694,7 +700,7 @@ header {
                     }
                     .sale-block {
                         width: 48px;
-                        margin: 0 auto ;
+                        margin: 0 auto;
                         height: 21px;
                         background-color: #a7171a;
                         display: flex;

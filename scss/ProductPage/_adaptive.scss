@@ -30,6 +30,46 @@
     .container {
         width: 960px;
     }
+    .product-content {
+        .container {
+            .product-content-blocks {
+                .product-right-side {
+                    .product-ingridients {
+                        .block-ingridient {
+                            grid-template-columns: 170px 1fr;
+                        }
+                        .block-inform {
+                            grid-template-columns: 170px 1fr;
+                        }
+                    }
+                    .product-settings {
+                        .product-payment {
+                            grid-template-columns: 0.8fr 1.4fr 1fr;
+                            .product-quintity {
+                                padding: 0 10px;
+                                a {
+                                    p {
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                            .product-incart {
+                                a {
+                                    font-size: 12px;
+                                    .cart-icon {
+                                        margin: 0 10px 0 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .product-info {
+                        grid-template-columns: 1fr 1.4fr;
+                    }
+                }
+            }
+        }
+    }
     footer {
         .sponsors-line-wrapper {
             .container {
@@ -124,6 +164,120 @@
                     .navigation-links {
                         font-size: 12px;
                         margin: 0;
+                    }
+                }
+            }
+        }
+    }
+    .product-content {
+        .container {
+            .product-content-blocks {
+                .product-left-side {
+                    .product-img-bcg{
+                        height: 488px;
+                    }
+                    .product-mini-block{
+                        margin: 0 0 34px 0;
+                    }
+                    .product-about-block {
+                        .leaf-block {
+                            .leaf-big {
+                                left: 248px !important;
+                            }
+                        }
+                    }
+                }
+                .product-right-side {
+                    .product-name {
+                        margin: 0 0 12px 0;
+                        .name-text {
+                            font-size: 22px;
+                        }
+                    }
+                    .product-ingridients {
+                        .block-ingridient {
+                            grid-template-columns: 170px 1fr;
+                        }
+                        .block-inform {
+                            grid-template-columns: 170px 1fr;
+                        }
+                    }
+                    .product-settings {
+                        padding: 10px 0 22px 0;
+                        .product-price {
+                            .price-text {
+                                font-size: 19px;
+                                margin: 0 16px 0 0;
+                            }
+                            .price-info {
+                                font-size: 11px;
+                            }
+                        }
+                        .product-payment {
+                            grid-template-columns: 1fr 0.7fr 1fr;
+                            .product-quintity {
+                                padding: 0 10px;
+                                a {
+                                    p {
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                            .product-incart {
+                                a {
+                                    font-size: 0;
+                                    .cart-icon {
+                                        width: 24px;
+                                        height: 24px;
+                                        margin: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .product-info {
+                        grid-template-columns: 1fr 1.4fr;
+                        margin: 0 0 42px 0;
+                        .info-check{
+                            .check-icon{
+                                margin: 0 14px 0 0;
+                            }
+                            .check-text{
+                                font-size: 12px;
+                            }
+                        }
+                        .info-delivery{
+                            .truck-icon{
+                                margin: 0 19px 0 0;
+                            }
+                            .delivery-text{
+                                font-size: 12px;
+                            }
+                        }
+                        .info-phone{
+                            .phone-icon{
+                                margin: 0 10px 0 0;
+                            }
+                            .phone-text{
+                                font-size: 12px;
+                            }
+                        }
+                        .info-email{
+                            .email-icon{
+                                margin: 0 14px 0 0;
+                            }
+                            .email-text{
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                    .product-ingridients {
+                        .title-ingridient {
+                            margin: 0 0 26px 0;
+                        }
+                        .title-inform {
+                            margin: 0 0 26px 0;
+                        }
                     }
                 }
             }
@@ -347,7 +501,7 @@
 @media only screen and (min-width: 576px) and (max-width: 767px) {
     .container {
         width: 100%;
-        padding: 0 30px;
+        padding: 0 15px;
     }
     header {
         .main-settings-wrapper {
@@ -436,14 +590,139 @@
             }
         }
     }
+    .product-content {
+        .container {
+            .product-content-blocks {
+                grid-template-rows: 0.6fr 1fr;
+                grid-template-columns: 1fr;
+                .product-left-side {
+                    .product-img-bcg{
+                        height: 488px;
+                    }
+                    .product-mini-block{
+                        margin: 0 0 34px 0;
+                    }
+                    .product-about-block {
+                        display: none;
+                        height: 0;
+                        width: 0;
+                        .leaf-block {
+                            .leaf-big {
+                                left: 248px !important;
+                            }
+                        }
+                    }
+                }
+                .product-right-side {
+                    .product-name {
+                        margin: 0 0 12px 0;
+                        .name-text {
+                            font-size: 22px;
+                        }
+                    }
+                    .product-ingridients {
+                        .block-ingridient {
+                            grid-template-columns: 170px 1fr;
+                        }
+                        .block-inform {
+                            grid-template-columns: 170px 1fr;
+                        }
+                    }
+                    .product-settings {
+                        padding: 10px 0 22px 0;
+                        .product-price {
+                            .price-text {
+                                font-size: 19px;
+                                margin: 0 16px 0 0;
+                            }
+                            .price-info {
+                                font-size: 11px;
+                            }
+                        }
+                        .product-payment {
+                            grid-template-columns: 0.8fr 1.2fr 1fr;
+                            .product-quintity {
+                                padding: 0 10px;
+                                a {
+                                    p {
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                            .product-incart {
+                                a {
+                                    font-size: 14px;
+                                    .cart-icon {
+                                        width: 24px;
+                                        height: 24px;
+                                        margin: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .product-info {
+                        grid-template-columns: 1fr 1.4fr;
+                        margin: 0 0 42px 0;
+                        .info-check{
+                            .check-icon{
+                                margin: 0 14px 0 0;
+                            }
+                            .check-text{
+                                font-size: 12px;
+                            }
+                        }
+                        .info-delivery{
+                            .truck-icon{
+                                margin: 0 19px 0 0;
+                            }
+                            .delivery-text{
+                                font-size: 12px;
+                            }
+                        }
+                        .info-phone{
+                            .phone-icon{
+                                margin: 0 10px 0 0;
+                            }
+                            .phone-text{
+                                font-size: 12px;
+                            }
+                        }
+                        .info-email{
+                            .email-icon{
+                                margin: 0 14px 0 0;
+                            }
+                            .email-text{
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                    .product-ingridients {
+                        .title-ingridient {
+                            margin: 0 0 26px 0;
+                        }
+                        .title-inform {
+                            margin: 0 0 26px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
     .recomended-products-list {
         .container {
             .recomended-products {
                 grid-template-columns: 1fr 1fr;
                 grid-template-rows: 1fr 1fr;
                 gap: 20px;
+                :nth-child(1),
+                :nth-child(3) {
+                    justify-self: flex-end;
+                }
                 .recomended-products-block {
+                    max-width: 250px;
                     height: 278px;
+
                     a {
                         .yellow-package {
                             margin: 32px auto 0;
@@ -882,7 +1161,7 @@
     .recomended-products-list {
         .container {
             .recomended-title {
-                padding: 30px 0 0 0 ;
+                padding: 30px 0 0 0;
                 .title-text {
                     font-size: 16px;
                 }
