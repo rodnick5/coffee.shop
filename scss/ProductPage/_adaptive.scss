@@ -47,10 +47,11 @@
                             grid-template-columns: 0.8fr 1.4fr 1fr;
                             .product-quintity {
                                 padding: 0 10px;
-                                a {
-                                    p {
-                                        font-size: 12px;
-                                    }
+                                .quintity-text {
+                                    font-size: 12px;
+                                }
+                                .quintity-number {
+                                    font-size: 12px;
                                 }
                             }
                             .product-incart {
@@ -217,10 +218,12 @@
                             grid-template-columns: 1fr 0.7fr 1fr;
                             .product-quintity {
                                 padding: 0 10px;
-                                a {
-                                    p {
-                                        font-size: 12px;
-                                    }
+
+                                .quintity-text {
+                                    font-size: 12px;
+                                }
+                                .quintity-number {
+                                    font-size: 12px;
                                 }
                             }
                             .product-incart {
@@ -643,7 +646,7 @@
                             grid-template-columns: 0.8fr 1.2fr 1fr;
                             .product-quintity {
                                 padding: 0 10px;
-                                a {
+                                
                                     justify-content: center;
                                     .quintity-text {
                                         font-size: 12px;
@@ -653,7 +656,6 @@
                                         font-size: 12px;
                                         margin: 0 45px 0 0;
                                     }
-                                }
                             }
                             .product-incart {
                                 a {
@@ -1197,21 +1199,21 @@
                     .product-ingridients {
                         .block-ingridient {
                             grid-template-columns: 1fr 1fr;
-                            p{
+                            p {
                                 font-size: 12px;
                             }
                         }
                         .block-inform {
                             grid-template-columns: 1fr 1fr;
-                            p{
+                            p {
                                 font-size: 12px;
                             }
                         }
                     }
                     .product-settings {
                         padding: 10px 0 22px 0;
-                        .product-weight{
-                            .weight-text{
+                        .product-weight {
+                            .weight-text {
                                 font-size: 12px;
                             }
                         }
@@ -1228,14 +1230,14 @@
                             grid-template-columns: 1.1fr 0.9fr 1fr;
                             .product-quintity {
                                 padding: 0 6px;
-                                a {
+                                
                                     .quintity-text {
                                         font-size: 11px;
                                     }
                                     .quintity-number {
                                         font-size: 11px;
                                     }
-                                }
+                                
                             }
                             .product-incart {
                                 a {

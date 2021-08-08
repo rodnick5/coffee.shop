@@ -26,6 +26,10 @@ img.svg {
   opacity: 0.5;
 }
 
+a {
+  color: #000000;
+}
+
 .back-to-top {
   width: 44px;
   height: 44px;
@@ -285,7 +289,7 @@ header .header-title {
 }
 
 header .header-title p {
-  color: black;
+  color: #000000;
   font-size: 16px;
 }
 
@@ -316,6 +320,10 @@ header .header-page .page-name {
 
 header .header-page .page-name li {
   margin: 0 10px;
+  font-size: 12px;
+}
+
+header .header-page .page-name li a {
   font-size: 12px;
 }
 
@@ -543,31 +551,19 @@ header .header-page .page-name li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   background-color: #dedede;
   padding: 0 17px 0 17px;
-}
-
-.product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-quintity a {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   font-size: 14px;
 }
 
-.product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-quintity a .quintity-icon {
+.product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-quintity .quintity-icon {
   margin: 2px 0 0 0;
   width: 12px;
   height: 12px;
@@ -612,6 +608,12 @@ header .header-page .page-name li {
 }
 
 .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-paypal {
+  background-color: #ffc439;
+}
+
+.product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-paypal a {
+  width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -621,7 +623,6 @@ header .header-page .page-name li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #ffc439;
 }
 
 .product-content .container .product-content-blocks .product-right-side .product-info {
@@ -1486,7 +1487,10 @@ footer .footer-services-wrapper .container .footer-services .social-part .social
   .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-quintity {
     padding: 0 10px;
   }
-  .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-quintity a p {
+  .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-quintity .quintity-text {
+    font-size: 12px;
+  }
+  .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-quintity .quintity-number {
     font-size: 12px;
   }
   .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-incart a {
@@ -1592,7 +1596,10 @@ footer .footer-services-wrapper .container .footer-services .social-part .social
   .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-quintity {
     padding: 0 10px;
   }
-  .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-quintity a p {
+  .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-quintity .quintity-text {
+    font-size: 12px;
+  }
+  .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-quintity .quintity-number {
     font-size: 12px;
   }
   .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-incart a {
@@ -1963,17 +1970,15 @@ footer .footer-services-wrapper .container .footer-services .social-part .social
   }
   .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-quintity {
     padding: 0 10px;
-  }
-  .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-quintity a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-quintity a .quintity-text {
+  .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-quintity .quintity-text {
     font-size: 12px;
     margin: 0 20px 0 0;
   }
-  .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-quintity a .quintity-number {
+  .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-quintity .quintity-number {
     font-size: 12px;
     margin: 0 45px 0 0;
   }
@@ -2509,10 +2514,10 @@ footer .footer-services-wrapper .container .footer-services .social-part .social
   .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-quintity {
     padding: 0 6px;
   }
-  .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-quintity a .quintity-text {
+  .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-quintity .quintity-text {
     font-size: 11px;
   }
-  .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-quintity a .quintity-number {
+  .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-quintity .quintity-number {
     font-size: 11px;
   }
   .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-incart a {
