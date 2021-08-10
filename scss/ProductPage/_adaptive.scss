@@ -1212,11 +1212,14 @@
                     }
                     .product-settings {
                         padding: 10px 0 22px 0;
-                        .product-weight {
+                        .weight-block{
+                            .product-weight {
                             .weight-text {
                                 font-size: 12px;
                             }
                         }
+                        }
+                        
                         .product-price {
                             .price-text {
                                 font-size: 19px;

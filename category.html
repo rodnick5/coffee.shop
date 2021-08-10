@@ -236,7 +236,7 @@
                             </div></a>
                         </div>
                             <div class="top-products-block brown-block">
-                                <a href="product.html"><div class="new-block"><p>NEV</p></div>
+                                <a href="packages/coffee-brown.html"><div class="new-block"><p>NEV</p></div>
                                 <img src="img/coffeeBottleDarkTop.png" class="dark-package" alt="">
                                 <span class="horizontal-line"></span>
                                 <div class="products-titles">
@@ -247,7 +247,7 @@
                                 </div></a>
                             </div>
                             <div class="top-products-block brown-block">
-                                <a href="product.html"><div class="new-block"><p>NEV</p></div>
+                                <a href="packages/coffee-brown.html"><div class="new-block"><p>NEV</p></div>
                                 <img src="img/coffeeBottleDarkTop.png" class="dark-package" alt="">
                                 <span class="horizontal-line"></span>
                                 <div class="products-titles">
@@ -258,7 +258,7 @@
                                 </div></a>
                             </div>
                             <div class="top-products-block brown-block">
-                                <a href="product.html"><div class="new-block"><p>NEV</p></div>
+                                <a href="packages/coffee-brown.html"><div class="new-block"><p>NEV</p></div>
                                 <img src="img/coffeeBottleDarkTop.png" class="dark-package" alt="">
                                 <span class="horizontal-line"></span>
                                 <div class="products-titles">
@@ -280,7 +280,7 @@
                                 </div></a>
                             </div>
                             <div class="top-products-block brown-block">
-                                <a href="product.html"><div class="new-block"><p>NEV</p></div>
+                                <a href="packages/coffee-brown.html"><div class="new-block"><p>NEV</p></div>
                                 <img src="img/coffeeBottleDarkTop.png" class="dark-package" alt="">
                                 <span class="horizontal-line"></span>
                                 <div class="products-titles">
@@ -312,7 +312,7 @@
                                 </div></a>
                             </div>
                             <div class="top-products-block brown-block">
-                                <a href="product.html"><div class="new-block"><p>NEV</p></div>
+                                <a href="packages/coffee-brown.html"><div class="new-block"><p>NEV</p></div>
                                 <img src="img/coffeeBottleDarkTop.png" class="dark-package" alt="">
                                 <span class="horizontal-line"></span>
                                 <div class="products-titles">
@@ -503,7 +503,30 @@
             </div>
         </div>
     </footer>
-    
-<script src="js/script.js"></script>
+    <script src="js/script.js"></script>
+<script>
+let countryBtn = document.getElementById('countryBtn');
+countryBtn.addEventListener('click', function func1 (){
+  document.getElementById('countryMarks').classList.toggle('country-list-active');
+  document.getElementById('imgCountry').classList.toggle('rotate180');
+});
+
+let TrdBtn = document.getElementById('trdBtn');
+TrdBtn.addEventListener('click' , function func2() {
+  document.getElementById('trdList').classList.toggle('list-trade-active');
+  document.getElementById('imgTrade').classList.toggle('rotate180');
+});
+
+document.getElementById('filter-btn1').addEventListener('click', fltrMenu);
+document.getElementById('filter-btn2').addEventListener('click', fltrMenu);
+
+function fltrMenu() {
+  let menu = document.getElementById('filter-menu');
+  menu.classList.toggle("filter-active");
+  document.body.classList.toggle("freeze-page");
+};
+
+
+</script>
 </body>
 </html>

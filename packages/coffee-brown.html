@@ -5,9 +5,9 @@
     <base href="coffee.shop">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <title>Document</title>
-    <link rel="shortcut icon" href="img/contentBottleYellow.png" type="image/png">
-    <link rel="stylesheet" href="css/mainProduct.css">
+    <title>Brown Coffee Package</title>
+    <link rel="shortcut icon" href="../img/contentBottleYellow.png" type="image/png">
+    <link rel="stylesheet" href="../css/mainProduct.css">
 </head>
 <body class="page">
     <svg display="none">
@@ -26,18 +26,18 @@
             <circle class="st1" cx="24" cy="28" r="1"/>
         </symbol>
     </svg>
-    <div class="back-to-top" id="back-top"><img src="svg/arrowUpIcon.svg" class="svg" alt=""></div>
+    <div class="back-to-top" id="back-top"><img src="../svg/arrowUpIcon.svg" class="svg" alt=""></div>
     <header>
         <div class="main-settings-wrapper">
         <div class="container">
         <div class="main-settings">
             <div class="main-settings-left">
-                <img class="svg" src="svg/earthIcon.svg" alt="earthIcon">
+                <img class="svg" src="../svg/earthIcon.svg" alt="earthIcon">
                 <a href="indexRU.html" target="_parent" class="settings-language">DE</a>
                 <p class="settings-title">UNTERNHEMEN</p>
             </div>
             <div class="main-settings-center">
-                <img src="svg/phoneIcon.svg" class="svg" alt="phoneIcon">
+                <img src="../svg/phoneIcon.svg" class="svg" alt="phoneIcon">
                 <a href="tel:+380631231234">+38 063 123 1234</a>
             </div>
             <div class="main-settings-right">
@@ -51,20 +51,20 @@
             <div class="help-line">
             <div class="help-line-left">
                 <div class="menu-burger" id="menu-burger-button"><span></span></div>
-                <a href="#"><img src="img/logoHeader.png" alt="logoHeader"></a></div>
+                <a href="#"><img src="../img/logoHeader.png" alt="logoHeader"></a></div>
             <div class="help-line-center">
                 <input type="text" placeholder="Suche" name="search">
-                <button class="search-btn" type="submit" name="search"><img class="svg" src="svg/searchIcon.svg" alt="searchIcon"></button>
+                <button class="search-btn" type="submit" name="search"><img class="svg" src="../svg/searchIcon.svg" alt="searchIcon"></button>
                 
             </div>
             <div class="help-line-right">
                 <div class="self-cabinet">
-                    <a class="cabinet-link" href="#"><img class="svg" src="svg/faceIcon.svg" alt="faceIcon">
+                    <a class="cabinet-link" href="#"><img class="svg" src="../svg/faceIcon.svg" alt="faceIcon">
                     <p>Mein Konto</p></a>
                     
                 </div>
                 <div class="self-cart">
-                    <a class="cart-link" href="#"><img class="svg" src="svg/cartIcon.svg" alt="cartIcon">
+                    <a class="cart-link" href="#"><img class="svg" src="../svg/cartIcon.svg" alt="cartIcon">
                     <p>Warenkorb</p></a>
                     
                 </div>
@@ -89,9 +89,9 @@
         </div>
 <div class="header-page">
     <ul class="page-name">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="../index.html">Home</a></li>
         <li>/</li>
-        <li><a href="category.html">Lebensmittel</a></li>
+        <li><a href="../category.html">Lebensmittel</a></li>
         <li>/</li>
         <li>TechDivision Kaffee Base</li>
     </ul>
@@ -101,17 +101,17 @@
     <div class="container">
         <div class="product-content-blocks">
             <div class="product-left-side">
-                <div class="product-img-bcg"><img src="img/coffeeBottleDarkSlider.png" alt="coffeeBottleDarkSlider"></div>
+                <div class="product-img-bcg"><img src="../img/coffeeBottleDarkSlider.png" alt="coffeeBottleDarkSlider"></div>
                 <div class="product-mini-block">
-                    <div class="product-mini-img"><img src="img/coffeeBottleDarkSlider.png" alt="coffeeBottleDarkSlider"></div>
+                    <div class="product-mini-img"><img src="../img/coffeeBottleDarkSlider.png" alt="coffeeBottleDarkSlider"></div>
                 </div>
                 
                 <div class="product-about-block">
                 <h2 class="about-title">Nachhaltigkeit</h2>
                 <div class="leaf-block">
-                    <img src="img/leaf1.png" class="leaf-big" alt="">
-                    <img src="img/leaf1.png" class="leaf-medium" alt="">
-                    <img src="img/leaf1.png" class="leaf-small" alt="">
+                    <img src="../img/leaf1.png" class="leaf-big" alt="">
+                    <img src="../img/leaf1.png" class="leaf-medium" alt="">
+                    <img src="../img/leaf1.png" class="leaf-small" alt="">
                 </div>
                 <div class="about-text"><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p></div>   
             </div>
@@ -124,18 +124,25 @@
                     <h4 class="price-text">9,95 €</h4>
                     <p class="price-info">Inkl. 19% MwSt., zzgl. Versandkosten   (2,59 € / 1 kg)</p>
                 </div>
-                <div class="product-weight"><p class="weight-text">500 g</p><img src="svg/arrowDown.svg" class="svg" alt=""></div>
+                    <div class="product-weight" id="weightBtn"><span class="weight-text" id="weightText">500 g</span><img src="../svg/arrowDown.svg" class="svg" id="arrowWeight" alt=""></div>
+                    <div class="weight-list-menu" id="weightMenu">
+                        <ul class="weight-menu">
+                            <li class="weight upper-block"><span class="weight-number" data-id="id200">200 g</span></li>
+                            <li class="weight"><span class="weight-number" data-id="id350">350 g</span></li>
+                            <li class="weight"><span class="weight-number" data-id="id900">900 g</span></li>
+                        </ul>
+                    </div>
                     <div class="product-payment">
-                    <div class="product-quintity"><p class="quintity-text">Menge</p><p class="quintity-number">1</p><img src="svg/arrowDown.svg" class="quintity-icon" alt=""></div>
+                    <div class="product-quintity"><p class="quintity-text">Menge</p><p class="quintity-number">1</p><img src="../svg/arrowDown.svg" class="quintity-icon" alt=""></div>
                     <div class="product-incart"><a href=""><svg class="cart-icon"><use xlink:href="#cartIcon"></use></svg>In den Warenkorb</a></div>
-                    <div class="product-paypal"><a href=""><img src="img/payPalLogo.png" alt=""></a></div>
+                    <div class="product-paypal"><a href=""><img src="../img/payPalLogo.png" alt=""></a></div>
                 </div>
             </div>
                 <div class="product-info">
                     <div class="info-check"><svg class="check-icon"><use xlink:href="#checkIcon"></use></svg><p class="check-text">Verfügbar</p></div>
-                    <div class="info-delivery"><img src="svg/truckIcon.svg" class="truck-icon" alt=""><p class="delivery-text">Versandinformationen ›</p></div>
-                    <div class="info-phone"><img src="svg/phoneIcon.svg" class="phone-icon" alt=""><p class="phone-text"> +49 8031 221 055 0 </p></div>
-                    <div class="info-email"><img src="svg/letterIconWhite.svg" class="email-icon" alt=""><p class="email-text">Schreiben Sie uns eine E-Mail</p></div>
+                    <div class="info-delivery"><img src="../svg/truckIcon.svg" class="truck-icon" alt=""><p class="delivery-text">Versandinformationen ›</p></div>
+                    <div class="info-phone"><img src="../svg/phoneIcon.svg" class="phone-icon" alt=""><p class="phone-text"> +49 8031 221 055 0 </p></div>
+                    <div class="info-email"><img src="../svg/letterIconWhite.svg" class="email-icon" alt=""><p class="email-text">Schreiben Sie uns eine E-Mail</p></div>
                 </div>
                 <div class="product-ingridients">
                     <h2 class="title-ingridient">Zutaten</h2>
@@ -156,7 +163,7 @@
         <div class="recomended-title"><h2 class="title-text">das könnte dich auch interessieren</h2></div>
         <div class="recomended-products">
             <div class="recomended-products-block green-block">
-                <a href="#"><img src="img/coffeePackageGreenTop.png" class="green-package" alt="">
+                <a href="#"><img src="../img/coffeePackageGreenTop.png" class="green-package" alt="">
                 <span class="horizontal-line"></span>
                 <div class="products-titles">
                 <h3>TechDivision Schokolade 125g</h3>
@@ -166,7 +173,7 @@
                 </div></a>
             </div>
             <div class="recomended-products-block yellow-block">
-                <a href="#"><img src="img/contentBottleYellowTop.png" class="yellow-package" alt="">
+                <a href="#"><img src="../img/contentBottleYellowTop.png" class="yellow-package" alt="">
                 <span class="horizontal-line"></span>
                 <div class="products-titles">
                 <h3>TechDivision Kakao</h3>
@@ -177,7 +184,7 @@
             </div>
             <div class="recomended-products-block brown-block">
                 <a href="https://www.youtube.com/"><div class="new-block"><p>NEV</p></div>
-                <img src="img/coffeeBottleDarkTop.png" class="dark-package" alt="">
+                <img src="../img/coffeeBottleDarkTop.png" class="dark-package" alt="">
                 <span class="horizontal-line"></span>
                 <div class="products-titles">
                 <h3>TechDivision Kaffee</h3>
@@ -188,7 +195,7 @@
             </div>
             <div class="recomended-products-block white-block">
                 <a href="#"><div class="sale-block"><p>SALE</p></div>
-                <img src="img/coffeePackageWhiteTop.png" class="white-package" alt="">
+                <img src="../img/coffeePackageWhiteTop.png" class="white-package" alt="">
                 <span class="horizontal-line"></span>
                 <div class="products-titles">
                 <h3>TechDivision Grüner Tee</h3>
@@ -206,7 +213,7 @@
                 <h2>Zuletzt gesehene Produkte</h2>
                 <div class="showed-products">
                     <div class="showed-products-block yellow-block">
-                        <a href="#"><img src="img/contentBottleYellowTop.png" class="yellow-package" alt="">
+                        <a href="#"><img src="../img/contentBottleYellowTop.png" class="yellow-package" alt="">
                         <span class="horizontal-line"></span>
                         <div class="products-titles">
                         <h3>TechDivision Kakao</h3>
@@ -217,7 +224,7 @@
                     </div>
                     <div class="showed-products-block white-block">
                         <a href="#"><div class="sale-block"><p>SALE</p></div>
-                        <img src="img/coffeePackageWhiteTop.png" class="white-package" alt="">
+                        <img src="../img/coffeePackageWhiteTop.png" class="white-package" alt="">
                         <span class="horizontal-line"></span>
                         <div class="products-titles">
                         <h3>TechDivision Grüner Tee</h3>
@@ -227,7 +234,7 @@
                         </div></a>
                     </div>
                     <div class="showed-products-block yellow-block">
-                        <a href="https://www.youtube.com/"><img src="img/contentBottleYellowTop.png" class="yellow-package" alt="">
+                        <a href="https://www.youtube.com/"><img src="../img/contentBottleYellowTop.png" class="yellow-package" alt="">
                         <span class="horizontal-line"></span>
                         <div class="products-titles">
                         <h3>TechDivision Kakao</h3>
@@ -245,10 +252,10 @@
             <div class="sponsors-line">
                 <div class="left-side">
                     <div class="img-line">
-                    <img class="images-left" src="img/sofort.png" alt="">
-                    <img class="images-left" src="img/visa.png" alt="">
-                    <img class="images-left" src="img/masterCard.png" alt="">
-                    <img class="images-left" src="img/payPal.png" alt="">
+                    <img class="images-left" src="../img/sofort.png" alt="">
+                    <img class="images-left" src="../img/visa.png" alt="">
+                    <img class="images-left" src="../img/masterCard.png" alt="">
+                    <img class="images-left" src="../img/payPal.png" alt="">
                     </div>
                     <div class="title-line">
                     <h3 class="titles-left" >Vorkasse</h3>
@@ -257,9 +264,9 @@
                     </div>
                 </div>
                 <div class="right-side">
-                    <img class="images-right" src="img/eBrand.png" alt="">
-                    <img class="images-right" src="img/sslBrand.png" alt="">
-                    <img class="images-right" src="img/markBrand.png" alt="">
+                    <img class="images-right" src="../img/eBrand.png" alt="">
+                    <img class="images-right" src="../img/sslBrand.png" alt="">
+                    <img class="images-right" src="../img/markBrand.png" alt="">
                 </div>
             </div>
         </div>
@@ -268,7 +275,7 @@
         <div class="container">
             <div class="services-line">
                 <div class="phone-block">
-                    <img src="svg/phoneIcon.svg" class="phone-img" alt="">
+                    <img src="../svg/phoneIcon.svg" class="phone-img" alt="">
                     <div class="phone-info">
                     <p>SERVICE UND HILFE</p>
                     <a href="tel:+49 8031 221 055 0">+49 8031 221 055 0</a>
@@ -278,21 +285,21 @@
                 <div class="fax-block">
                     <h3>FAX</h3>
                     <div class="info-part">
-                    <img src="svg/fileIcon.svg" class="svg" alt="">
+                    <img src="../svg/fileIcon.svg" class="svg" alt="">
                     <a href="tel:+49 8031 2210 55 22">+49 8031 2210 55 22</a>
                 </div>
                 </div>
                 <div class="adress-block">
                     <h3>ADRESSE</h3>
                     <div class="info-part">
-                    <img src="svg/markerIcon.svg" class="svg marker-img" alt="">
+                    <img src="../svg/markerIcon.svg" class="svg marker-img" alt="">
                     <a target="_blank" href="https://ru.wikipedia.org/wiki/%D0%9F%D0%BE%D0%BB%D1%82%D0%B0%D0%B2%D0%B0#/maplink/0">Karte zeigen ></a>
                 </div>
                 </div>
                 <div class="email-block">
                     <h3>Schreiben Sie uns eine E-Mail</h3>
                     <div class="info-part">
-                    <img src="svg/letterIconblack.svg" class="svg email-img" alt="">
+                    <img src="../svg/letterIconblack.svg" class="svg email-img" alt="">
                     <p>info@techdivision.com</p>
                 </div>
                 </div>
@@ -333,19 +340,46 @@
                     <h3>NEWSLETTER</h3>
                     <div class="form-email">
                         <input type="text" name="email" placeholder="Your E-mail">
-                        <button name="email" type="submit"><img src="svg/arrowRigthIcon.svg" class="svg" alt=""></button>
+                        <button name="email" type="submit"><img src="../svg/arrowRigthIcon.svg" class="svg" alt=""></button>
                     </div>
                 </div>
                     <div class="social-links">
-                        <a href=""><img src="svg/instagramIcon.svg" class="svg" alt=""></a>
-                        <a href=""><img src="svg/googleIcon.svg" class="svg" alt=""></a>
-                        <a href=""><img src="svg/facebookIcon.svg" class="svg" alt=""></a>
-                        <a href=""><img src="svg/youtubeIcon.svg" class="svg" alt=""></a>
-                        <a href=""><img src="svg/vimeoIcon.svg" class="svg" alt=""></a>
+                        <a href=""><img src="../svg/instagramIcon.svg" class="svg" alt=""></a>
+                        <a href=""><img src="../svg/googleIcon.svg" class="svg" alt=""></a>
+                        <a href=""><img src="../svg/facebookIcon.svg" class="svg" alt=""></a>
+                        <a href=""><img src="../svg/youtubeIcon.svg" class="svg" alt=""></a>
+                        <a href=""><img src="../svg/vimeoIcon.svg" class="svg" alt=""></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </footer>
-<script src="js/script.js"></script>
+<script src="../js/script.js"></script>
+<script>
+      let weightBtn = document.getElementById('weightBtn');
+      let weightText = document.getElementById('weightText'); 
+      let weightMenu = document.getElementById('weightMenu');
+      let arrowWeight = document.getElementById('arrowWeight');
+  weightBtn.addEventListener('click' , function(){
+    weightMenu.classList.toggle('weight-active');
+    arrowWeight.classList.toggle('rotate180');
+  });
+
+
+  let weightNumArr = document.querySelectorAll('.weight-number').forEach(weightElem => { 
+  weightElem.addEventListener('click', (e)=>{
+    let id = e.target.getAttribute('data-id');
+    let weightGrams = e.target.textContent;
+    let currentWeight = weightText.innerHTML;
+    if(id) {
+        weightText.innerHTML = weightGrams;
+        e.target.innerHTML = currentWeight;
+        console.log(id);
+    } else {return};
+    weightMenu.classList.toggle('weight-active');
+    arrowWeight.classList.toggle('rotate180');
+    });
+});
+
+</script>

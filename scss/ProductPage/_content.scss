@@ -300,6 +300,7 @@ header {
                     width: 100%;
                     border-top: 1px solid #eaeaea;
                     padding: 22px 0 22px 0;
+                    position: relative;
                     .product-price {
                         margin: 0 0 28px 0;
                         display: flex;
@@ -315,7 +316,9 @@ header {
                             color: #848484;
                         }
                     }
+
                     .product-weight {
+                        z-index: 10;
                         width: 100%;
                         height: 54px;
                         padding: 0 16px 0 16px;
@@ -325,7 +328,37 @@ header {
                         justify-content: space-between;
                         align-items: center;
                         .weight-text {
+                            user-select: none;
                             font-size: 14px;
+                        }
+                    }
+                    .weight-list-menu {
+                        z-index: 1;
+                        width: 100%;
+                        background-color: #dedede;
+                        display: flex;
+                        flex-direction: column;
+                        position: absolute;
+                        opacity: 0;
+                        visibility: hidden;
+                        left: 0;
+                        top: 74px;
+                        .weight-menu {
+                            list-style: none;
+                            .weight {
+                                height: 54px;
+                                width: 100%;
+                                display: flex;
+                                align-items: center;
+                                padding: 0 0 0 16px;
+                                border-bottom: 1px solid #b7b7b7;
+                                span {
+                                    font-size: 14px;
+                                }
+                                &.upper-block {
+                                    border-top: 1px solid #b7b7b7;
+                                }
+                            }
                         }
                     }
                     .product-payment {

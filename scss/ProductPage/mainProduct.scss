@@ -22,7 +22,7 @@ img.svg {
     height: 16px;
     opacity: 0.5;
 }
-a{
+a {
     color: #000000;
 }
 .back-to-top {
@@ -49,8 +49,19 @@ a{
     cursor: pointer;
     visibility: visible;
 }
+.weight-active {
+    visibility: visible !important;
+    opacity: 1 !important;
+    top: 127px !important;
+}
+.rotate180 {
+    transform: rotate(180deg) !important;
+    -webkit-transform: rotate(180deg) !important;
+    -moz-transform: rotate(180deg) !important;
+    -ms-transform: rotate(180deg) !important;
+    -o-transform: rotate(180deg) !important;
+}
 
 @import "_content";
 @import "_footer";
 @import "_adaptive";
-
