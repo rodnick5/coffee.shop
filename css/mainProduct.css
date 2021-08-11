@@ -68,6 +68,12 @@ a {
   top: 127px !important;
 }
 
+.quintity-active {
+  visibility: visible !important;
+  opacity: 1 !important;
+  top: 204px !important;
+}
+
 .rotate180 {
   transform: rotate(180deg) !important;
   -webkit-transform: rotate(180deg) !important;
@@ -582,18 +588,20 @@ header .header-page .page-name li a {
 .product-content .container .product-content-blocks .product-right-side .product-settings .weight-list-menu .weight-menu .weight {
   height: 54px;
   width: 100%;
+  border-bottom: 1px solid #b7b7b7;
+}
+
+.product-content .container .product-content-blocks .product-right-side .product-settings .weight-list-menu .weight-menu .weight span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 0 0 16px;
-  border-bottom: 1px solid #b7b7b7;
-}
-
-.product-content .container .product-content-blocks .product-right-side .product-settings .weight-list-menu .weight-menu .weight span {
   font-size: 14px;
+  width: 100%;
+  height: 100%;
+  padding: 0 0 0 16px;
 }
 
 .product-content .container .product-content-blocks .product-right-side .product-settings .weight-list-menu .weight-menu .weight.upper-block {
@@ -603,8 +611,8 @@ header .header-page .page-name li a {
 .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 0.8fr 1.7fr 1fr;
-      grid-template-columns: 0.8fr 1.7fr 1fr;
+  -ms-grid-columns: 152px 1.7fr 1fr;
+      grid-template-columns: 152px 1.7fr 1fr;
   -ms-grid-rows: 54px;
       grid-template-rows: 54px;
   gap: 10px;
@@ -686,6 +694,53 @@ header .header-page .page-name li a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.product-content .container .product-content-blocks .product-right-side .product-settings .quintity-list-menu {
+  width: 152px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #dedede;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  left: 0;
+  top: 151px;
+}
+
+.product-content .container .product-content-blocks .product-right-side .product-settings .quintity-list-menu .quintity-menu {
+  list-style: none;
+  width: 100%;
+}
+
+.product-content .container .product-content-blocks .product-right-side .product-settings .quintity-list-menu .quintity-menu li {
+  border-bottom: 1px solid #b7b7b7;
+  height: 54px;
+  width: 100%;
+}
+
+.product-content .container .product-content-blocks .product-right-side .product-settings .quintity-list-menu .quintity-menu li.upper-block {
+  border-top: 1px solid #b7b7b7;
+}
+
+.product-content .container .product-content-blocks .product-right-side .product-settings .quintity-list-menu .quintity-menu li span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
 }
 
 .product-content .container .product-content-blocks .product-right-side .product-info {
@@ -1544,8 +1599,8 @@ footer .footer-services-wrapper .container .footer-services .social-part .social
         grid-template-columns: 170px 1fr;
   }
   .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment {
-    -ms-grid-columns: 0.8fr 1.4fr 1fr;
-        grid-template-columns: 0.8fr 1.4fr 1fr;
+    -ms-grid-columns: 112px 1.4fr 1fr;
+        grid-template-columns: 112px 1.4fr 1fr;
   }
   .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-quintity {
     padding: 0 10px;
@@ -1561,6 +1616,10 @@ footer .footer-services-wrapper .container .footer-services .social-part .social
   }
   .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-incart a .cart-icon {
     margin: 0 10px 0 0;
+  }
+  .product-content .container .product-content-blocks .product-right-side .product-settings .quintity-list-menu {
+    width: 112px;
+    top: 151px;
   }
   .product-content .container .product-content-blocks .product-right-side .product-info {
     -ms-grid-columns: 1fr 1.4fr;
@@ -1658,8 +1717,8 @@ footer .footer-services-wrapper .container .footer-services .social-part .social
     font-size: 11px;
   }
   .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment {
-    -ms-grid-columns: 1fr 0.7fr 1fr;
-        grid-template-columns: 1fr 0.7fr 1fr;
+    -ms-grid-columns: 111px 1fr 1fr;
+        grid-template-columns: 111px 1fr 1fr;
   }
   .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-quintity {
     padding: 0 10px;
@@ -1677,6 +1736,13 @@ footer .footer-services-wrapper .container .footer-services .social-part .social
     width: 24px;
     height: 24px;
     margin: 0;
+  }
+  .product-content .container .product-content-blocks .product-right-side .product-settings .quintity-list-menu {
+    top: 137px;
+    width: 111px;
+  }
+  .product-content .container .product-content-blocks .product-right-side .product-settings .quintity-active {
+    top: 190px !important;
   }
   .product-content .container .product-content-blocks .product-right-side .product-info {
     -ms-grid-columns: 1fr 1.4fr;
@@ -2038,8 +2104,8 @@ footer .footer-services-wrapper .container .footer-services .social-part .social
     font-size: 11px;
   }
   .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment {
-    -ms-grid-columns: 0.8fr 1.2fr 1fr;
-        grid-template-columns: 0.8fr 1.2fr 1fr;
+    -ms-grid-columns: 141px 1.2fr 1fr;
+        grid-template-columns: 141px 1.2fr 1fr;
   }
   .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-quintity {
     padding: 0 10px;
@@ -2062,6 +2128,13 @@ footer .footer-services-wrapper .container .footer-services .social-part .social
     width: 24px;
     height: 24px;
     margin: 0 20px 0 0;
+  }
+  .product-content .container .product-content-blocks .product-right-side .product-settings .quintity-list-menu {
+    top: 137px;
+    width: 141px;
+  }
+  .product-content .container .product-content-blocks .product-right-side .product-settings .quintity-active {
+    top: 190px !important;
   }
   .product-content .container .product-content-blocks .product-right-side .product-info {
     -ms-grid-columns: 1fr 1.4fr;
@@ -2586,8 +2659,8 @@ footer .footer-services-wrapper .container .footer-services .social-part .social
     font-size: 10px;
   }
   .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment {
-    -ms-grid-columns: 1.1fr 0.9fr 1fr;
-        grid-template-columns: 1.1fr 0.9fr 1fr;
+    -ms-grid-columns: 100px 0.9fr 1fr;
+        grid-template-columns: 100px 0.9fr 1fr;
   }
   .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-quintity {
     padding: 0 6px;
@@ -2605,6 +2678,16 @@ footer .footer-services-wrapper .container .footer-services .social-part .social
     width: 24px;
     height: 24px;
     margin: 0;
+  }
+  .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment .product-paypal a img {
+    width: 110px;
+  }
+  .product-content .container .product-content-blocks .product-right-side .product-settings .quintity-list-menu {
+    top: 135px;
+    width: 100px;
+  }
+  .product-content .container .product-content-blocks .product-right-side .product-settings .quintity-active {
+    top: 188px !important;
   }
   .product-content .container .product-content-blocks .product-right-side .product-info {
     -ms-grid-columns: 1fr 1.4fr;

@@ -133,10 +133,19 @@
                         </ul>
                     </div>
                     <div class="product-payment">
-                    <div class="product-quintity"><p class="quintity-text">Menge</p><p class="quintity-number">1</p><img src="../svg/arrowDown.svg" class="quintity-icon" alt=""></div>
+                    <div class="product-quintity" id="quintityBtn"><p class="quintity-text">Menge</p><p class="quintity-number" quintity-id="id1">1</p><img src="../svg/arrowDown.svg" class="quintity-icon" alt=""></div>
+
                     <div class="product-incart"><a href=""><svg class="cart-icon"><use xlink:href="#cartIcon"></use></svg>In den Warenkorb</a></div>
                     <div class="product-paypal"><a href=""><img src="../img/payPalLogo.png" alt=""></a></div>
                 </div>
+                    <div class="quintity-list-menu" id="quintityMenu">
+                       <ul class="quintity-menu">
+                           <li class="upper-block"><span class="quintity-number" quintity-id="id2">2 st</span></li>
+                           <li><span class="quintity-number" quintity-id="id3">3 st</span></li>
+                           <li><span class="quintity-number" quintity-id="id4">4 st</span></li>
+                           <li><span class="quintity-number" quintity-id="id5">5 st</span></li>
+                       </ul>
+                   </div>
             </div>
                 <div class="product-info">
                     <div class="info-check"><svg class="check-icon"><use xlink:href="#checkIcon"></use></svg><p class="check-text">Verfügbar</p></div>
@@ -361,28 +370,35 @@
       let weightText = document.getElementById('weightText'); 
       let weightMenu = document.getElementById('weightMenu');
       let arrowWeight = document.getElementById('arrowWeight');
-  weightBtn.addEventListener('click' , function(){
+  weightBtn.addEventListener('click' , () => {
     weightMenu.classList.toggle('weight-active');
     arrowWeight.classList.toggle('rotate180');
   });
 
 
   let weightNumArr = document.querySelectorAll('.weight-number').forEach(weightElem => { 
-  weightElem.addEventListener('click', (e)=>{
-    let menuID = e.target.getAttribute('weight-id');
+  weightElem.addEventListener('click', (e)=> {
+    let ev = e.target;
+    let menuID = ev.getAttribute('weight-id');
     let blockID = weightText.getAttribute('weight-id');
-    let weightGrams = e.target.textContent;
-    let currentWeight = weightText.innerHTML;
+    let weightGrams = ev.textContent;
+    let currentWeight = weightText.textContent;
     if(menuID) {
-        weightText.innerHTML = weightGrams;
-        e.target.innerHTML = currentWeight;
+        weightText.textContent = weightGrams;
+        ev.textContent = currentWeight;
         weightText.setAttribute('weight-id', menuID);
-        e.target.setAttribute('weight-id' , blockID);
+        ev.setAttribute('weight-id' , blockID);
         console.log(menuID , blockID);
     } else {return};
     weightMenu.classList.toggle('weight-active');
     arrowWeight.classList.toggle('rotate180');
     });
 });
+
+let quintBtn = document.getElementById('quintityBtn');
+let quintMenu = document.getElementById('quintityMenu');
+quintBtn.addEventListener('click' , () => {
+quintMenu.classList.toggle('quintity-active');
+})
 
 </script>
