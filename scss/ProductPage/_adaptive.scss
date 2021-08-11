@@ -204,6 +204,11 @@
                         }
                     }
                     .product-settings {
+                        .weight-active {
+                            visibility: visible !important;
+                            opacity: 1 !important;
+                            top: 113px !important;
+                        }
                         padding: 10px 0 22px 0;
                         .product-price {
                             .price-text {
@@ -633,6 +638,11 @@
                     }
                     .product-settings {
                         padding: 10px 0 22px 0;
+                        .weight-active {
+                            visibility: visible !important;
+                            opacity: 1 !important;
+                            top: 113px !important;
+                        }
                         .product-price {
                             .price-text {
                                 font-size: 19px;
@@ -646,16 +656,16 @@
                             grid-template-columns: 0.8fr 1.2fr 1fr;
                             .product-quintity {
                                 padding: 0 10px;
-                                
-                                    justify-content: center;
-                                    .quintity-text {
-                                        font-size: 12px;
-                                        margin: 0 20px 0 0;
-                                    }
-                                    .quintity-number {
-                                        font-size: 12px;
-                                        margin: 0 45px 0 0;
-                                    }
+
+                                justify-content: center;
+                                .quintity-text {
+                                    font-size: 12px;
+                                    margin: 0 20px 0 0;
+                                }
+                                .quintity-number {
+                                    font-size: 12px;
+                                    margin: 0 45px 0 0;
+                                }
                             }
                             .product-incart {
                                 a {
@@ -1212,35 +1222,39 @@
                     }
                     .product-settings {
                         padding: 10px 0 22px 0;
-                        .weight-block{
+                        .weight-active {
+                            visibility: visible !important;
+                            opacity: 1 !important;
+                            top: 111px !important;
+                        }
+                        .weight-block {
                             .product-weight {
-                            .weight-text {
-                                font-size: 12px;
+                                .weight-text {
+                                    font-size: 12px;
+                                }
                             }
                         }
-                        }
-                        
+
                         .product-price {
                             .price-text {
-                                font-size: 19px;
-                                margin: 0 16px 0 0;
+                                font-size: 17px;
+                                margin: 0 7px 0 0;
                             }
                             .price-info {
-                                font-size: 11px;
+                                font-size: 10px;
                             }
                         }
                         .product-payment {
                             grid-template-columns: 1.1fr 0.9fr 1fr;
                             .product-quintity {
                                 padding: 0 6px;
-                                
-                                    .quintity-text {
-                                        font-size: 11px;
-                                    }
-                                    .quintity-number {
-                                        font-size: 11px;
-                                    }
-                                
+
+                                .quintity-text {
+                                    font-size: 11px;
+                                }
+                                .quintity-number {
+                                    font-size: 11px;
+                                }
                             }
                             .product-incart {
                                 a {

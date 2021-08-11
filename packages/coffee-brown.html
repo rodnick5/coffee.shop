@@ -124,12 +124,12 @@
                     <h4 class="price-text">9,95 €</h4>
                     <p class="price-info">Inkl. 19% MwSt., zzgl. Versandkosten   (2,59 € / 1 kg)</p>
                 </div>
-                    <div class="product-weight" id="weightBtn"><span class="weight-text" id="weightText">500 g</span><img src="../svg/arrowDown.svg" class="svg" id="arrowWeight" alt=""></div>
+                    <div class="product-weight" id="weightBtn"><span class="weight-text" id="weightText" weight-id="id500">500 g</span><img src="../svg/arrowDown.svg" class="svg" id="arrowWeight" alt=""></div>
                     <div class="weight-list-menu" id="weightMenu">
                         <ul class="weight-menu">
-                            <li class="weight upper-block"><span class="weight-number" data-id="id200">200 g</span></li>
-                            <li class="weight"><span class="weight-number" data-id="id350">350 g</span></li>
-                            <li class="weight"><span class="weight-number" data-id="id900">900 g</span></li>
+                            <li class="weight upper-block"><span class="weight-number" weight-id="id200">200 g</span></li>
+                            <li class="weight"><span class="weight-number" weight-id="id350">350 g</span></li>
+                            <li class="weight"><span class="weight-number" weight-id="id900">900 g</span></li>
                         </ul>
                     </div>
                     <div class="product-payment">
@@ -369,13 +369,16 @@
 
   let weightNumArr = document.querySelectorAll('.weight-number').forEach(weightElem => { 
   weightElem.addEventListener('click', (e)=>{
-    let id = e.target.getAttribute('data-id');
+    let menuID = e.target.getAttribute('weight-id');
+    let blockID = weightText.getAttribute('weight-id');
     let weightGrams = e.target.textContent;
     let currentWeight = weightText.innerHTML;
-    if(id) {
+    if(menuID) {
         weightText.innerHTML = weightGrams;
         e.target.innerHTML = currentWeight;
-        console.log(id);
+        weightText.setAttribute('weight-id', menuID);
+        e.target.setAttribute('weight-id' , blockID);
+        console.log(menuID , blockID);
     } else {return};
     weightMenu.classList.toggle('weight-active');
     arrowWeight.classList.toggle('rotate180');

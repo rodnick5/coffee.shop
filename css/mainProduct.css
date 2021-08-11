@@ -1645,6 +1645,11 @@ footer .footer-services-wrapper .container .footer-services .social-part .social
   .product-content .container .product-content-blocks .product-right-side .product-settings {
     padding: 10px 0 22px 0;
   }
+  .product-content .container .product-content-blocks .product-right-side .product-settings .weight-active {
+    visibility: visible !important;
+    opacity: 1 !important;
+    top: 113px !important;
+  }
   .product-content .container .product-content-blocks .product-right-side .product-settings .product-price .price-text {
     font-size: 19px;
     margin: 0 16px 0 0;
@@ -2019,6 +2024,11 @@ footer .footer-services-wrapper .container .footer-services .social-part .social
   }
   .product-content .container .product-content-blocks .product-right-side .product-settings {
     padding: 10px 0 22px 0;
+  }
+  .product-content .container .product-content-blocks .product-right-side .product-settings .weight-active {
+    visibility: visible !important;
+    opacity: 1 !important;
+    top: 113px !important;
   }
   .product-content .container .product-content-blocks .product-right-side .product-settings .product-price .price-text {
     font-size: 19px;
@@ -2560,15 +2570,20 @@ footer .footer-services-wrapper .container .footer-services .social-part .social
   .product-content .container .product-content-blocks .product-right-side .product-settings {
     padding: 10px 0 22px 0;
   }
+  .product-content .container .product-content-blocks .product-right-side .product-settings .weight-active {
+    visibility: visible !important;
+    opacity: 1 !important;
+    top: 111px !important;
+  }
   .product-content .container .product-content-blocks .product-right-side .product-settings .weight-block .product-weight .weight-text {
     font-size: 12px;
   }
   .product-content .container .product-content-blocks .product-right-side .product-settings .product-price .price-text {
-    font-size: 19px;
-    margin: 0 16px 0 0;
+    font-size: 17px;
+    margin: 0 7px 0 0;
   }
   .product-content .container .product-content-blocks .product-right-side .product-settings .product-price .price-info {
-    font-size: 11px;
+    font-size: 10px;
   }
   .product-content .container .product-content-blocks .product-right-side .product-settings .product-payment {
     -ms-grid-columns: 1.1fr 0.9fr 1fr;
