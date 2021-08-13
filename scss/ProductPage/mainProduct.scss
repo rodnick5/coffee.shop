@@ -52,12 +52,20 @@ a {
 .weight-active {
     visibility: visible !important;
     opacity: 1 !important;
-    top: 127px !important;
+    transform: rotateX(0deg) !important;
+    -webkit-transform: rotateX(0deg) !important;
+    -moz-transform: rotateX(0deg) !important;
+    -ms-transform: rotateX(0deg) !important;
+    -o-transform: rotateX(0deg) !important;
 }
-.quintity-active{
+.quintity-active {
     visibility: visible !important;
     opacity: 1 !important;
-    top: 204px !important;
+    transform: rotateX(0deg) !important;
+    -webkit-transform: rotateX(0deg) !important;
+    -moz-transform: rotateX(0deg) !important;
+    -ms-transform: rotateX(0deg) !important;
+    -o-transform: rotateX(0deg) !important;
 }
 .rotate180 {
     transform: rotate(180deg) !important;

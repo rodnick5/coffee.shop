@@ -124,26 +124,29 @@
                     <h4 class="price-text">9,95 €</h4>
                     <p class="price-info">Inkl. 19% MwSt., zzgl. Versandkosten   (2,59 € / 1 kg)</p>
                 </div>
-                    <div class="product-weight" id="weightBtn"><span class="weight-text" id="weightText" weight-id="id500">500 g</span><img src="../svg/arrowDown.svg" class="svg" id="arrowWeight" alt=""></div>
+                    <div class="product-weight" id="weightBtn">
+                        <span class="weight-text" id="weightText" weight-id="w500">500 g</span>
+                        <img src="../svg/arrowDown.svg" class="svg" id="arrowWeight" alt="">
+                    </div>
                     <div class="weight-list-menu" id="weightMenu">
                         <ul class="weight-menu">
-                            <li class="weight upper-block"><span class="weight-number 200" weight-id="id200">200 g</span></li>
-                            <li class="weight"><span class="weight-number 350" weight-id="id350">350 g</span></li>
-                            <li class="weight"><span class="weight-number 900" weight-id="id900">900 g</span></li>
+                            <li class="weight upper-block"><span class="weight-number 200" weight-id="w200">200 g</span></li>
+                            <li class="weight"><span class="weight-number 350" weight-id="w350">350 g</span></li>
+                            <li class="weight"><span class="weight-number 900" weight-id="w900">900 g</span></li>
                         </ul>
                     </div>
                     <div class="product-payment">
-                    <div class="product-quintity" id="quintityBtn"><p class="quintity-text">Menge</p><p class="quintity-number" quintity-id="id1" id="quintityText">1</p><img src="../svg/arrowDown.svg" class="quintity-icon" alt=""></div>
+                    <div class="product-quintity" id="quintityBtn"><p class="quintity-text">Menge</p><p quintity-id="q1" id="quintityText">1</p><img src="../svg/arrowDown.svg" class="quintity-icon" id="arrowQuint" alt=""></div>
 
                     <div class="product-incart"><a href=""><svg class="cart-icon"><use xlink:href="#cartIcon"></use></svg>In den Warenkorb</a></div>
                     <div class="product-paypal"><a href=""><img src="../img/payPalLogo.png" alt=""></a></div>
                 </div>
                     <div class="quintity-list-menu" id="quintityMenu">
                        <ul class="quintity-menu">
-                           <li class="upper-block"><span class="quintity-number" quintity-id="id2">2 st</span></li>
-                           <li><span class="quintity-number" quintity-id="id3">3 st</span></li>
-                           <li><span class="quintity-number" quintity-id="id4">4 st</span></li>
-                           <li><span class="quintity-number" quintity-id="id5">5 st</span></li>
+                           <li class="upper-block"><span class="quintity-number" quintity-id="q2">2</span></li>
+                           <li><span class="quintity-number" quintity-id="q3">3</span></li>
+                           <li><span class="quintity-number" quintity-id="q4">4</span></li>
+                           <li><span class="quintity-number" quintity-id="q5">5</span></li>
                        </ul>
                    </div>
             </div>
@@ -366,6 +369,8 @@
 </footer>
 <script src="../js/script.js"></script>
 <script>
+
+
       let weightBtn = document.getElementById('weightBtn');
       let weightText = document.getElementById('weightText'); 
       let weightMenu = document.getElementById('weightMenu');
@@ -374,19 +379,27 @@
       let quintBtn = document.getElementById('quintityBtn');
       let quintMenu = document.getElementById('quintityMenu');
       let quintText = document.getElementById('quintityText');
+      let arrowQuint = document.getElementById('arrowQuint');
 
-  weightBtn.addEventListener('click' , () => {
-      
-    weightMenu.classList.toggle('weight-active');
-    arrowWeight.classList.toggle('rotate180');
+  weightBtn.addEventListener('click' , (e) => {
+        if(!quintMenu.classList.contains('quintity-active')){
+            weightMenu.classList.toggle('weight-active');
+        arrowWeight.classList.toggle('rotate180');  
+        window.onclick = function weightClose(e)  {
+        if(!e.target.classList.contains('product-weight')){
+            weightMenu.classList.remove('weight-active');
+            arrowWeight.classList.remove('rotate180');
+        } else{return};
+        }
+      } else {return};
+    
   });
 
 
   let weightNumArr = document.querySelectorAll('.weight-number').forEach(weightElem => { 
-  weightElem.addEventListener('click', (e)=> {  
-    let menuID = e.target.getAttribute('weight-id');
+  weightElem.addEventListener('click', (e)=> {
+    let menuID = e.target.getAttribute('weight-id'); 
     let blockID = weightText.getAttribute('weight-id');
-
     let targetWeight = e.target.textContent;
     let currentWeight = weightText.textContent;
     if(menuID) {
@@ -394,31 +407,45 @@
         e.target.textContent = currentWeight;
         weightText.setAttribute('weight-id', menuID);
         e.target.setAttribute('weight-id' , blockID);
-        console.log(menuID , blockID);
+        
     } else {return};
     weightMenu.classList.toggle('weight-active');
     arrowWeight.classList.toggle('rotate180');
+    console.log(menuID);
     });
 });
 
 
-
 quintBtn.addEventListener('click' , () => {
-quintMenu.classList.toggle('quintity-active');
-})
+    if(!weightMenu.classList.contains('weight-active')){
+        quintMenu.classList.toggle('quintity-active');
+        arrowQuint.classList.toggle('rotate180');
+        window.onclick = function quintClose(e){
+        if(!e.target.classList.contains('product-quintity')){
+            quintMenu.classList.remove('quintity-active');
+            arrowQuint.classList.remove('rotate180');
+        } else {return};
+    }
+    } else {return};
+
+});
 
 let quintNumArr = document.querySelectorAll('.quintity-number').forEach(quintElem => {
     quintElem.addEventListener('click', (e) => {
-        console.log(e.target);
     let menuID = e.target.getAttribute('quintity-id');
     let blockID = quintText.getAttribute('quintity-id');
     let targetQuint = e.target.textContent;
     let currentQuint = quintText.textContent;
     if(menuID){
-        quintText.textContent = targetQuint.replace(/\D/g,'');
-        e.target.textContent = currentQuint + ' st';
+        quintText.textContent = targetQuint;
+        e.target.textContent = currentQuint;
+        quintText.setAttribute('quintity-id', menuID);
+        e.target.setAttribute('quintity-id' , blockID);
     } else {return};
-
+    quintMenu.classList.toggle('quintity-active');
+    arrowQuint.classList.toggle('rotate180');
+    console.log(menuID);
     });
 });
+
 </script>
