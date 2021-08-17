@@ -1,3 +1,10 @@
+"use strict";
+
+import './category.js'
+import './product.js'
+import './swiper.js'
+
+
 function backToTop() {
     if (window.pageYOffset > 0) {
       window.scrollBy(0, -30);
@@ -32,3 +39,5 @@ function backToTop() {
     menuBtn.classList.toggle('active-menu-btn');
     nav.classList.toggle('active-nav-line');
   });
+
+  
