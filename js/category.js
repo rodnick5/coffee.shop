@@ -20,3 +20,18 @@ function fltrMenu() {
   menu.classList.toggle("filter-active");
   document.body.classList.toggle("freeze-page");
 };
+
+document.querySelector('.weight-list').addEventListener('click' , (e) => {
+if (e.target.classList.contains('weight-link') || e.target.classList.contains('weight-check') || e.target.classList.contains('weight-list')) {
+  return;
+}
+    let weightNumArr = document.querySelectorAll('.weight-num');
+    weightNumArr.forEach(weightNum => {
+      weightNum.classList.remove('active-weight');
+       weightNum.firstElementChild.classList.remove('active-check-weight');
+    })
+    e.target.classList.add('active-weight');
+    e.target.firstElementChild.classList.add('active-check-weight');
+    
+});
+

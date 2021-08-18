@@ -311,18 +311,33 @@ header {
                         grid-template-columns: 1fr 1fr 1fr;
                         grid-template-rows: 1fr 1fr 1fr;
                         .weight-link {
+                            width: 100%;
+                            height: 100%;
+                            text-align: center;
                             &.right-side {
-                                justify-self: end;
+                                text-align: right;
                             }
                             &.left-side {
-                                justify-self: start;
+                                text-align: left;
                             }
-                            text-align: center;
-
-                            a {
+                            span {
+                                cursor: pointer;
                                 color: #000;
                                 font-size: 12px;
                                 font-weight: 500;
+                                user-select: none;
+                                .weight-check {
+                                    display: inline-block;
+                                    width: 0px;
+                                    height: 0px;
+                                    visibility: hidden;
+                                    opacity: 0;
+                                    transform: rotateY(90deg);
+                                    -webkit-transform: rotateY(90deg);
+                                    -moz-transform: rotateY(90deg);
+                                    -ms-transform: rotateY(90deg);
+                                    -o-transform: rotateY(90deg);
+                                }
                             }
                         }
                     }
@@ -351,7 +366,7 @@ header {
                         .marks-link {
                             width: 100%;
                             margin-top: 7px;
-                            a {
+                            span {
                                 font-size: 12px;
                                 font-weight: 500;
                                 color: #000;
@@ -389,7 +404,7 @@ header {
                         .marks-link {
                             width: 100%;
                             margin-top: 7px;
-                            a {
+                            span {
                                 text-transform: uppercase;
                                 font-weight: 500;
                                 color: #000;
@@ -612,7 +627,6 @@ header {
                                 }
                             }
                         }
-
                         a {
                             width: 100%;
                             height: 100%;
@@ -639,14 +653,19 @@ header {
                         background-color: #fff;
                         position: relative;
                         text-align: center;
-
                         a {
                             position: relative;
                             padding-top: 12px;
                             display: block;
                             width: 100%;
                             height: 100%;
-
+                            &:hover > img {
+                                transform: scale(1.03);
+                                -webkit-transform: scale(1.03);
+                                -moz-transform: scale(1.03);
+                                -ms-transform: scale(1.03);
+                                -o-transform: scale(1.03);
+                            }
                             .products-titles {
                                 display: flex;
                                 flex-direction: column;

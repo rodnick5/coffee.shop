@@ -14,6 +14,9 @@
     -ms-transition: all 0.2s;
     -o-transition: all 0.2s;
 }
+ul, li{
+    list-style: none;
+}
 .container {
     margin: 0 auto;
 }
@@ -27,6 +30,20 @@ img.svg {
 }
 .close-filter {
     display: none;
+}
+.active-weight{
+    font-weight: 800 !important;
+}
+.active-check-weight{
+    width: 12px !important;
+    height: 12px !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    transform: rotateY(0deg) !important;
+    -webkit-transform: rotateY(0deg) !important;
+    -moz-transform: rotateY(0deg) !important;
+    -ms-transform: rotateY(0deg) !important;
+    -o-transform: rotateY(0deg) !important;
 }
 .rotate180 {
     transform: rotate(180deg) !important;

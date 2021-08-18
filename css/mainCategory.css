@@ -16,6 +16,10 @@
   -o-transition: all 0.2s;
 }
 
+ul, li {
+  list-style: none;
+}
+
 .container {
   margin: 0 auto;
 }
@@ -32,6 +36,22 @@ img.svg {
 
 .close-filter {
   display: none;
+}
+
+.active-weight {
+  font-weight: 800 !important;
+}
+
+.active-check-weight {
+  width: 12px !important;
+  height: 12px !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  transform: rotateY(0deg) !important;
+  -webkit-transform: rotateY(0deg) !important;
+  -moz-transform: rotateY(0deg) !important;
+  -ms-transform: rotateY(0deg) !important;
+  -o-transform: rotateY(0deg) !important;
 }
 
 .rotate180 {
@@ -560,23 +580,41 @@ header .header-this-page .page-name {
 }
 
 .content-page .content-wrapper .container .select-part .weight-filter .weight-list .weight-link {
+  width: 100%;
+  height: 100%;
   text-align: center;
 }
 
 .content-page .content-wrapper .container .select-part .weight-filter .weight-list .weight-link.right-side {
-  -ms-grid-column-align: end;
-      justify-self: end;
+  text-align: right;
 }
 
 .content-page .content-wrapper .container .select-part .weight-filter .weight-list .weight-link.left-side {
-  -ms-grid-column-align: start;
-      justify-self: start;
+  text-align: left;
 }
 
-.content-page .content-wrapper .container .select-part .weight-filter .weight-list .weight-link a {
+.content-page .content-wrapper .container .select-part .weight-filter .weight-list .weight-link span {
+  cursor: pointer;
   color: #000;
   font-size: 12px;
   font-weight: 500;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.content-page .content-wrapper .container .select-part .weight-filter .weight-list .weight-link span .weight-check {
+  display: inline-block;
+  width: 0px;
+  height: 0px;
+  visibility: hidden;
+  opacity: 0;
+  transform: rotateY(90deg);
+  -webkit-transform: rotateY(90deg);
+  -moz-transform: rotateY(90deg);
+  -ms-transform: rotateY(90deg);
+  -o-transform: rotateY(90deg);
 }
 
 .content-page .content-wrapper .container .select-part .country-maked {
@@ -615,7 +653,7 @@ header .header-this-page .page-name {
   margin-top: 7px;
 }
 
-.content-page .content-wrapper .container .select-part .country-maked .country-marks .marks-link a {
+.content-page .content-wrapper .container .select-part .country-maked .country-marks .marks-link span {
   font-size: 12px;
   font-weight: 500;
   color: #000;
@@ -670,7 +708,7 @@ header .header-this-page .page-name {
   margin-top: 7px;
 }
 
-.content-page .content-wrapper .container .select-part .trade-marks .trade-list .marks-link a {
+.content-page .content-wrapper .container .select-part .trade-marks .trade-list .marks-link span {
   text-transform: uppercase;
   font-weight: 500;
   color: #000;
@@ -1059,6 +1097,14 @@ header .header-this-page .page-name {
   display: block;
   width: 100%;
   height: 100%;
+}
+
+.content-page .content-wrapper .container .products-part .top-products-wrapper .top-products-block a:hover > img {
+  transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  -o-transform: scale(1.03);
 }
 
 .content-page .content-wrapper .container .products-part .top-products-wrapper .top-products-block a .products-titles {
