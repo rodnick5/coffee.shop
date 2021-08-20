@@ -31,6 +31,21 @@ img.svg {
 .close-filter {
     display: none;
 }
+.active-count{
+    visibility: visible !important;
+    opacity: 1 !important;
+    transform: rotateX(0deg) !important;
+    -webkit-transform: rotateX(0deg) !important;
+    -moz-transform: rotateX(0deg) !important;
+    -ms-transform: rotateX(0deg) !important;
+    -o-transform: rotateX(0deg) !important;
+}
+.view-change-brick{
+    grid-template-columns: 1fr 1fr !important;
+}
+.nonactive-product{
+    display: none !important;
+}
 .active-weight{
     font-weight: 800 !important;
 }

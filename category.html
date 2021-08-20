@@ -8,7 +8,6 @@
     <title>Document</title>
     <link rel="shortcut icon" href="img/contentBottleYellow.png" type="image/png">
     <link rel="stylesheet" href="css/mainCategory.css">
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body class="page">
     <div class="back-to-top" id="back-top"><img src="svg/arrowUpIcon.svg" class="svg" alt=""></div>
@@ -179,11 +178,20 @@
                     <p class="num-count">12 von 136 Ergebnisse</p>
                     <div class="count-filter">
                         <p class="num-show">Zeige</p>
-                        <a href="">12<img src="svg/arrowDown.svg" alt=""></a>
+                        <div class="count-btn" id="countBtn">
+                            <span class="current-count" id="countText" count-id="12">12</span>
+                            <img src="svg/arrowDown.svg" id="countArrow" alt="">
+                        </div>
+                        <div class="count-list-menu" id="countMenu">
+                            <ul class="count-list">
+                            <li><span class="count-elem" count-id="9">9</span></li>
+                            <li><span class="count-elem" count-id="6">6</span></li>
+                        </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="position-filter">
-                    <a href="">Sortieren nach  Position<img src="svg/arrowDown.svg" alt=""></a>
+                    <a href="">Sortieren nach Position<img src="svg/arrowDown.svg" alt=""></a>
                 </div>
                 <div class="view-filter">
                     <div class="menu-filter"><p id="filter-btn1">Filters</p></div>
@@ -192,7 +200,7 @@
                         <div class="arrow-down"><img src="svg/arrowDown.svg"  alt=""></div>
                     </div>
                     <div class="bricks-wrapper">
-                        <div class="bricks-view">
+                        <div class="bricks-view" id="brickView">
                         <span class="brick"></span>
                         <span class="brick"></span>
                         <span class="brick"></span>
@@ -213,7 +221,7 @@
                     <div class="pagination-blocks"><a href="#" data-page="3"><p>3</p></a></div>
                     <div class="pagination-blocks right"><a href="#" class="arrow-link"><img src="svg/arrowRightonce.svg" class="arrow-right" alt=""></a></div>
                 </div>
-                <div class="top-products-wrapper">
+                <div class="top-products-wrapper" id="productsWrapper" >
                         <div class="top-products-block yellow-block">
                             <a href="https://www.youtube.com/"><img src="img/contentBottleYellowTop.png" class="yellow-package" alt="">
                             <span class="horizontal-line"></span>
@@ -504,5 +512,6 @@
         </div>
     </footer>
     <script src="./js/category.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

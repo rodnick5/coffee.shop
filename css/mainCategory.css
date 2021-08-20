@@ -38,6 +38,25 @@ img.svg {
   display: none;
 }
 
+.active-count {
+  visibility: visible !important;
+  opacity: 1 !important;
+  transform: rotateX(0deg) !important;
+  -webkit-transform: rotateX(0deg) !important;
+  -moz-transform: rotateX(0deg) !important;
+  -ms-transform: rotateX(0deg) !important;
+  -o-transform: rotateX(0deg) !important;
+}
+
+.view-change-brick {
+  -ms-grid-columns: 1fr 1fr !important;
+      grid-template-columns: 1fr 1fr !important;
+}
+
+.nonactive-product {
+  display: none !important;
+}
+
 .active-weight {
   font-weight: 800 !important;
 }
@@ -760,6 +779,7 @@ header .header-this-page .page-name {
 }
 
 .content-page .content-wrapper .container .products-part .products-list-filter .products-count {
+  height: 100%;
   padding-left: 11px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -770,17 +790,25 @@ header .header-this-page .page-name {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-right: 1px solid #eaeaee;
+  position: relative;
 }
 
 .content-page .content-wrapper .container .products-part .products-list-filter .products-count p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 12px;
+  height: 100%;
 }
 
 .content-page .content-wrapper .container .products-part .products-list-filter .products-count .count-filter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 100%;
 }
 
 .content-page .content-wrapper .container .products-part .products-list-filter .products-count .count-filter p {
@@ -788,7 +816,8 @@ header .header-this-page .page-name {
   margin-right: 9px;
 }
 
-.content-page .content-wrapper .container .products-part .products-list-filter .products-count .count-filter a {
+.content-page .content-wrapper .container .products-part .products-list-filter .products-count .count-filter .count-btn {
+  cursor: pointer;
   width: 56px;
   font-size: 12px;
   color: #000;
@@ -801,11 +830,77 @@ header .header-this-page .page-name {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  position: relative;
+  border-right: 1px solid #eaeaea;
 }
 
-.content-page .content-wrapper .container .products-part .products-list-filter .products-count .count-filter a img {
+.content-page .content-wrapper .container .products-part .products-list-filter .products-count .count-filter .count-btn .current-count {
+  pointer-events: none;
+}
+
+.content-page .content-wrapper .container .products-part .products-list-filter .products-count .count-filter .count-btn img {
+  pointer-events: none;
   height: 12px;
   width: 12px;
+}
+
+.content-page .content-wrapper .container .products-part .products-list-filter .products-count .count-filter .count-list-menu {
+  z-index: 10;
+  background-color: #f3f5f7;
+  position: absolute;
+  right: 0;
+  top: 47px;
+  width: 57px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid #eaeaee;
+  visibility: hidden;
+  opacity: 0;
+  transform: rotateX(90deg);
+  -webkit-transform: rotateX(90deg);
+  -moz-transform: rotateX(90deg);
+  -ms-transform: rotateX(90deg);
+  -o-transform: rotateX(90deg);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+
+.content-page .content-wrapper .container .products-part .products-list-filter .products-count .count-filter .count-list-menu .count-list {
+  width: 100%;
+}
+
+.content-page .content-wrapper .container .products-part .products-list-filter .products-count .count-filter .count-list-menu .count-list li {
+  width: 100%;
+  height: 44px;
+}
+
+.content-page .content-wrapper .container .products-part .products-list-filter .products-count .count-filter .count-list-menu .count-list li:nth-child(1) {
+  border-bottom: 1px solid #eaeaea;
+}
+
+.content-page .content-wrapper .container .products-part .products-list-filter .products-count .count-filter .count-list-menu .count-list li .count-elem {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
 }
 
 .content-page .content-wrapper .container .products-part .products-list-filter .position-filter {
@@ -928,6 +1023,7 @@ header .header-this-page .page-name {
       grid-template-columns: 6px 6px;
   -ms-grid-rows: 6px 6px;
       grid-template-rows: 6px 6px;
+  cursor: pointer;
 }
 
 .content-page .content-wrapper .container .products-part .products-list-filter .view-filter .bricks-wrapper .bricks-view .brick {
@@ -1857,6 +1953,10 @@ footer .footer-services-wrapper .container .footer-services .social-part .social
     font-size: 9px;
     margin-right: 5px;
   }
+  .content-page .content-wrapper .container .products-part .products-list-filter .products-count .count-filter .count-list-menu {
+    right: 4px;
+    top: 37px;
+  }
   .content-page .content-wrapper .container .products-part .products-list-filter .products-count .count-filter a {
     width: 40px;
     font-size: 9px;
@@ -2242,6 +2342,10 @@ footer .footer-services-wrapper .container .footer-services .social-part .social
   .content-page .content-wrapper .container .products-part .products-list-filter .products-count .count-filter .num-show {
     font-size: 9px;
     margin-right: 5px;
+  }
+  .content-page .content-wrapper .container .products-part .products-list-filter .products-count .count-filter .count-list-menu {
+    right: 4px;
+    top: 37px;
   }
   .content-page .content-wrapper .container .products-part .products-list-filter .products-count .count-filter a {
     width: 40px;
