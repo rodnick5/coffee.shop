@@ -44,12 +44,12 @@ a {
     -ms-transition: all 0.5s;
     -o-transition: all 0.5s;
 }
-.back-to-top-show {
+._back-to-top-show {
     opacity: 1;
     cursor: pointer;
     visibility: visible;
 }
-.weight-active {
+._weight-active {
     visibility: visible !important;
     opacity: 1 !important;
     transform: rotateX(0deg) !important;
@@ -58,7 +58,7 @@ a {
     -ms-transform: rotateX(0deg) !important;
     -o-transform: rotateX(0deg) !important;
 }
-.quintity-active {
+._quintity-active {
     visibility: visible !important;
     opacity: 1 !important;
     transform: rotateX(0deg) !important;
@@ -67,7 +67,7 @@ a {
     -ms-transform: rotateX(0deg) !important;
     -o-transform: rotateX(0deg) !important;
 }
-.rotate180 {
+._rotate180 {
     transform: rotate(180deg) !important;
     -webkit-transform: rotate(180deg) !important;
     -moz-transform: rotate(180deg) !important;

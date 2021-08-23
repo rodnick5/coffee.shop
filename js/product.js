@@ -11,13 +11,13 @@
       let arrowQuint = document.getElementById('arrowQuint');
 
   weightBtn.addEventListener('click' , (e) => {
-        if(!quintMenu.classList.contains('quintity-active')){
-            weightMenu.classList.toggle('weight-active');
-        arrowWeight.classList.toggle('rotate180');  
+        if(!quintMenu.classList.contains('_quintity-active')){
+            weightMenu.classList.toggle('_weight-active');
+        arrowWeight.classList.toggle('_rotate180');  
         window.onclick = function weightClose(e)  {
         if(!e.target.classList.contains('product-weight')){
-            weightMenu.classList.remove('weight-active');
-            arrowWeight.classList.remove('rotate180');
+            weightMenu.classList.remove('_weight-active');
+            arrowWeight.classList.remove('_rotate180');
         } else{return};
         }
       } else {return};
@@ -38,21 +38,21 @@
         e.target.setAttribute('weight-id' , blockID);
         
     } else {return};
-    weightMenu.classList.toggle('weight-active');
-    arrowWeight.classList.toggle('rotate180');
+    weightMenu.classList.toggle('_weight-active');
+    arrowWeight.classList.toggle('_rotate180');
     console.log(menuID);
     });
 });
 
 
 quintBtn.addEventListener('click' , () => {
-    if(!weightMenu.classList.contains('weight-active')){
-        quintMenu.classList.toggle('quintity-active');
-        arrowQuint.classList.toggle('rotate180');
+    if(!weightMenu.classList.contains('_weight-active')){
+        quintMenu.classList.toggle('_quintity-active');
+        arrowQuint.classList.toggle('_rotate180');
         window.onclick = function quintClose(e){
         if(!e.target.classList.contains('product-quintity')){
-            quintMenu.classList.remove('quintity-active');
-            arrowQuint.classList.remove('rotate180');
+            quintMenu.classList.remove('_quintity-active');
+            arrowQuint.classList.remove('_rotate180');
         } else {return};
     }
     } else {return};
@@ -71,8 +71,8 @@ let quintNumArr = document.querySelectorAll('.quintity-number').forEach(quintEle
         quintText.setAttribute('quintity-id', menuID);
         e.target.setAttribute('quintity-id' , blockID);
     } else {return};
-    quintMenu.classList.toggle('quintity-active');
-    arrowQuint.classList.toggle('rotate180');
+    quintMenu.classList.toggle('_quintity-active');
+    arrowQuint.classList.toggle('_rotate180');
     console.log(menuID);
     });
 });

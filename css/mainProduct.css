@@ -56,13 +56,13 @@ a {
   -o-transition: all 0.5s;
 }
 
-.back-to-top-show {
+._back-to-top-show {
   opacity: 1;
   cursor: pointer;
   visibility: visible;
 }
 
-.weight-active {
+._weight-active {
   visibility: visible !important;
   opacity: 1 !important;
   transform: rotateX(0deg) !important;
@@ -72,7 +72,7 @@ a {
   -o-transform: rotateX(0deg) !important;
 }
 
-.quintity-active {
+._quintity-active {
   visibility: visible !important;
   opacity: 1 !important;
   transform: rotateX(0deg) !important;
@@ -82,7 +82,7 @@ a {
   -o-transform: rotateX(0deg) !important;
 }
 
-.rotate180 {
+._rotate180 {
   transform: rotate(180deg) !important;
   -webkit-transform: rotate(180deg) !important;
   -moz-transform: rotate(180deg) !important;
@@ -2524,7 +2524,7 @@ footer .footer-services-wrapper .container .footer-services .social-part .social
     content: "";
     margin-top: -5px;
   }
-  header .help-line-wrapper .container .help-line .help-line-left .menu-burger.active-menu-btn span {
+  header .help-line-wrapper .container .help-line .help-line-left .menu-burger._active-menu-btn span {
     height: 0px !important;
     width: 0 !important;
     transition: none;
@@ -2533,7 +2533,7 @@ footer .footer-services-wrapper .container .footer-services .social-part .social
     -ms-transition: none;
     -o-transition: none;
   }
-  header .help-line-wrapper .container .help-line .help-line-left .menu-burger.active-menu-btn span:before {
+  header .help-line-wrapper .container .help-line .help-line-left .menu-burger._active-menu-btn span:before {
     content: "";
     margin-top: 0px;
     transition: all 0.3s;
@@ -2547,7 +2547,7 @@ footer .footer-services-wrapper .container .footer-services .social-part .social
     -ms-transform: rotate(-135deg);
     -o-transform: rotate(-135deg);
   }
-  header .help-line-wrapper .container .help-line .help-line-left .menu-burger.active-menu-btn span:after {
+  header .help-line-wrapper .container .help-line .help-line-left .menu-burger._active-menu-btn span:after {
     content: "";
     margin-top: 0px;
     transition: all 0.3s;
@@ -2603,7 +2603,7 @@ footer .footer-services-wrapper .container .footer-services .social-part .social
     -ms-transition: all 0.2s;
     -o-transition: all 0.2s;
   }
-  header .navigation-wrapper.active-nav-line {
+  header .navigation-wrapper._active-nav-line {
     opacity: 1;
     height: 90px !important;
     visibility: visible;

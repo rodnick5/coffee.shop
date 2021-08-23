@@ -887,7 +887,7 @@
                                 content: "";
                                 margin-top: -5px;
                             }
-                            &.active-menu-btn {
+                            &._active-menu-btn {
                                 span {
                                     height: 0px !important;
                                     width: 0 !important;
@@ -982,7 +982,7 @@
             -moz-transition: all 0.2s;
             -ms-transition: all 0.2s;
             -o-transition: all 0.2s;
-            &.active-nav-line {
+            &._active-nav-line {
                 opacity: 1;
                 height: 90px !important;
                 visibility: visible;

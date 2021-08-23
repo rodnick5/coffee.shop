@@ -205,7 +205,7 @@ header {
             display: flex;
             justify-content: space-between;
             .select-part {
-                width: 282px;
+                width: 24.5%;
                 padding: 0 20px 0 20px;
                 .products-all {
                     height: 182px;
@@ -437,7 +437,7 @@ header {
                 }
             }
             .products-part {
-                width: 894px;
+                width: 74.5%;
                 .products-list-filter {
                     border-top: 1px solid #eaeaee;
                     height: 48px;
@@ -708,10 +708,6 @@ header {
                         background-color: #fff;
                         position: relative;
                         text-align: center;
-
-                        // &:nth-child(-n+3){
-                        //     display: none;
-                        // }
                         a {
                             position: relative;
                             padding-top: 12px;
@@ -846,7 +842,7 @@ header {
                 display: grid;
                 grid-template-columns: 283px 283px 283px;
                 gap: 14px;
-                .top-products-block {
+                .showed-products-block {
                     height: 400px;
                     background-color: #fff;
                     position: relative;
