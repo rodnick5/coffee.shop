@@ -44,7 +44,8 @@
         .container {
             .products-line {
                 .products-block {
-                    &.cacao {
+                    a{
+                      &.cacao {
                         h3 {
                             left: 160px;
                         }
@@ -66,7 +67,9 @@
                                 left: 20px;
                             }
                         }
+                    }  
                     }
+                    
                 }
             }
         }
@@ -344,13 +347,15 @@
                 .products-block {
                     margin-bottom: 0;
                     flex-basis: 43.5%;
-
-                    &.chocolate {
+a{
+    &.chocolate {
                         margin-top: 0;
                     }
                     &.tea {
                         margin-top: 0;
                     }
+}
+                    
                 }
             }
         }
@@ -634,7 +639,8 @@
             .products-line {
                 .products-block {
                     flex-basis: 46.5%;
-                    &.cacao {
+                    a{
+                                  &.cacao {
                         h3 {
                             left: 140px;
                         }
@@ -654,6 +660,8 @@
                             }
                         }
                     }
+                    }
+          
                 }
             }
         }
