@@ -134,6 +134,7 @@
             .container {
                 justify-content: center;
                 .select-part {
+                    visibility: hidden;
                     overflow-y: auto;
                     z-index: 10;
                     position: fixed;
@@ -155,7 +156,7 @@
                             height: 15px;
                             position: absolute;
                             right: 0px;
-                            top: 30px;
+                            top: 17px;
                             z-index: 6;
                         }
                     }
@@ -178,6 +179,9 @@
                                 }
                             }
                         }
+                    }
+                    .weight-filter{
+                        width: 140px;
                     }
                 }
                 .products-part {
@@ -579,6 +583,8 @@
             .container {
                 justify-content: center;
                 .select-part {
+                    width: auto;
+                    visibility: hidden;
                     overflow-y: auto;
                     z-index: 10;
                     position: fixed;
@@ -600,7 +606,7 @@
                             height: 15px;
                             position: absolute;
                             right: 0px;
-                            top: 30px;
+                            top: 17px;
                             z-index: 6;
                         }
                     }
@@ -623,6 +629,9 @@
                                 }
                             }
                         }
+                    }
+                    .weight-filter{
+                        width: 140px;
                     }
                 }
                 .products-part {
@@ -1159,6 +1168,7 @@
             .container {
                 justify-content: center;
                 .select-part {
+                    visibility: hidden;
                     width: auto;
                     padding: 0 15px;
                     overflow-y: auto;
@@ -1207,6 +1217,9 @@
                                 }
                             }
                         }
+                    }
+                    .weight-filter{
+                        width: 140px;
                     }
                 }
                 .products-part {
@@ -1368,7 +1381,6 @@
                     font-size: 16px;
                 }
                 .showed-products {
-                    margin: 40px 0;
                     grid-template-columns: 1fr 1fr;
                     .showed-products-block {
                         &:nth-child(3) {

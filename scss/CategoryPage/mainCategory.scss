@@ -107,6 +107,7 @@ img.svg {
 }
 ._filter-active {
     left: 0 !important;
+    visibility: visible !important;
     transition: all 500ms;
     -webkit-transition: all 500ms;
     -moz-transition: all 500ms;
