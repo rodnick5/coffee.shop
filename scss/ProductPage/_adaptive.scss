@@ -66,8 +66,6 @@
                         .quintity-list-menu {
                             width: 112px;
                         }
-
-                        
                     }
                     .product-info {
                         grid-template-columns: 1fr 1.4fr;
@@ -209,10 +207,12 @@
                         }
                     }
                     .product-settings {
-                        .weight-active {
+                        .weight-list-menu {
+                            top: 114px !important;
+                        }
+                        ._weight-active {
                             visibility: visible !important;
                             opacity: 1 !important;
-                            top: 113px !important;
                         }
                         padding: 10px 0 22px 0;
                         .product-price {
@@ -248,7 +248,7 @@
                             }
                         }
                         .quintity-list-menu {
-                           top: 191px;
+                            top: 191px;
                             width: 111px;
                         }
                     }
@@ -647,10 +647,12 @@
                     }
                     .product-settings {
                         padding: 10px 0 22px 0;
-                        .weight-active {
+                        .weight-list-menu {
+                            top: 114px !important;
+                        }
+                        ._weight-active {
                             visibility: visible !important;
                             opacity: 1 !important;
-                            top: 113px !important;
                         }
                         .product-price {
                             .price-text {
@@ -1235,10 +1237,12 @@
                     }
                     .product-settings {
                         padding: 10px 0 22px 0;
-                        .weight-active {
+                        .weight-list-menu {
+                            top: 112px !important;
+                        }
+                        ._weight-active {
                             visibility: visible !important;
                             opacity: 1 !important;
-                            top: 111px !important;
                         }
                         .weight-block {
                             .product-weight {

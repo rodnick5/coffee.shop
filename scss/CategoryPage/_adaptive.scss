@@ -1159,6 +1159,8 @@
             .container {
                 justify-content: center;
                 .select-part {
+                    width: auto;
+                    padding: 0 15px;
                     overflow-y: auto;
                     z-index: 10;
                     position: fixed;
@@ -1180,7 +1182,7 @@
                             height: 15px;
                             position: absolute;
                             right: 0px;
-                            top: 30px;
+                            top: 17px;
                             z-index: 6;
                         }
                     }
@@ -1189,6 +1191,7 @@
                             height: 29px;
                             .reset-button {
                                 font-size: 9px;
+                                padding: 0 10px;
                             }
                         }
                     }
@@ -1198,6 +1201,7 @@
                             a {
                                 font-size: 9px;
                                 img {
+                                    margin: 0 0 0 2px;
                                     width: 9px;
                                     height: 9px;
                                 }
