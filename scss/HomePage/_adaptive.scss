@@ -44,32 +44,31 @@
         .container {
             .products-line {
                 .products-block {
-                    a{
-                      &.cacao {
-                        h3 {
-                            left: 160px;
-                        }
-                        .products-images {
-                            .main-img {
-                                left: 42px;
+                    a {
+                        &.cacao {
+                            h3 {
+                                left: 160px;
                             }
-                            .secondary-img {
-                                left: 151px;
+                            .products-images {
+                                .main-img {
+                                    left: 42px;
+                                }
+                                .secondary-img {
+                                    left: 151px;
+                                }
+                            }
+                        }
+                        &.chocolate {
+                            .products-images {
+                                .main-img {
+                                    left: 57px;
+                                }
+                                .secondary-img {
+                                    left: 20px;
+                                }
                             }
                         }
                     }
-                    &.chocolate {
-                        .products-images {
-                            .main-img {
-                                left: 57px;
-                            }
-                            .secondary-img {
-                                left: 20px;
-                            }
-                        }
-                    }  
-                    }
-                    
                 }
             }
         }
@@ -347,15 +346,14 @@
                 .products-block {
                     margin-bottom: 0;
                     flex-basis: 43.5%;
-a{
-    &.chocolate {
-                        margin-top: 0;
+                    a {
+                        &.chocolate {
+                            margin-top: 0;
+                        }
+                        &.tea {
+                            margin-top: 0;
+                        }
                     }
-                    &.tea {
-                        margin-top: 0;
-                    }
-}
-                    
                 }
             }
         }
@@ -639,29 +637,28 @@ a{
             .products-line {
                 .products-block {
                     flex-basis: 46.5%;
-                    a{
-                                  &.cacao {
-                        h3 {
-                            left: 140px;
-                        }
-                        .products-images {
-                            .main-img {
-                                left: 23px;
+                    a {
+                        &.cacao {
+                            h3 {
+                                left: 140px;
                             }
-                            .secondary-img {
-                                left: 129px;
+                            .products-images {
+                                .main-img {
+                                    left: 23px;
+                                }
+                                .secondary-img {
+                                    left: 129px;
+                                }
+                            }
+                        }
+                        &.chocolate {
+                            .products-images {
+                                .main-img {
+                                    left: 55px;
+                                }
                             }
                         }
                     }
-                    &.chocolate {
-                        .products-images {
-                            .main-img {
-                                left: 55px;
-                            }
-                        }
-                    }
-                    }
-          
                 }
             }
         }
